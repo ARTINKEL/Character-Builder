@@ -1,21 +1,31 @@
 package edu.bsu.cs222;
 
+import com.google.gson.JsonElement;
 import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class TestSentimentAnalysis {
-    public void testSentimentAnalysis() throws UnirestException {
 
-        String firstPart = "key=a532bb708c46f1448dff5d780930dbfd&lang=en&txt=";
-        String secondPart = "&txtf=plain&of=json";
-        String text = "Hello. Dick.";
+    @Test
+    public void testRequestResponse() throws UnirestException {
+        SentimentAnalysis sentimentAnalysis = new SentimentAnalysis();
+        HttpResponse jsonResponse = sentimentAnalysis.requestResponse();
+        Assert.assertNotNull(jsonResponse.getRawBody());
+    }
 
-        HttpResponse<String> response = Unirest.post("http://api.meaningcloud.com/sentiment-2.1")
-                .header("content-type", "application/x-www-form-urlencoded")
-                .body(firstPart + text + secondPart)
-                .asString();
+    @Test
+    public void testAnalyzerParser() throws UnirestException{
+        SentimentAnalysis sentimentAnalysis = new SentimentAnalysis();
+        AnalyzerParser parser = new AnalyzerParser();
+        HttpResponse jsonResponse = sentimentAnalysis.requestResponse();
+        JsonElement response = parser.parseResponse(jsonResponse.getRawBody());
+        Assert.assertNotNull(response);
+    }
 
-        System.out.println(response);
+    @Test
+    public void testAnalyzerParser_Content() {
+
     }
 }

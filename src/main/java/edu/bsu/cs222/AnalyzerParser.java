@@ -8,11 +8,10 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 
 public class AnalyzerParser {
-    public void parseStuff(InputStream inputStream) {
+    public JsonElement parseResponse(InputStream inputStream) {
         JsonParser parser = new JsonParser();
-        //InputStream inputStream = getClass().getClassLoader().getResourceAsStream("");
         Reader reader = new InputStreamReader(inputStream);
         JsonElement rootElement = parser.parse(reader);
-        System.out.println(rootElement);
+        return rootElement;
     }
 }
