@@ -11,7 +11,7 @@ public class TestSentimentAnalysis {
     @Test
     public void testRequestResponse() throws UnirestException {
         SentimentAnalysis sentimentAnalysis = new SentimentAnalysis();
-        HttpResponse jsonResponse = sentimentAnalysis.requestResponse();
+        HttpResponse jsonResponse = sentimentAnalysis.requestResponse("I am a dwarf paladin");
         Assert.assertNotNull(jsonResponse.getRawBody());
     }
 
@@ -19,7 +19,7 @@ public class TestSentimentAnalysis {
     public void testAnalyzerParser() throws UnirestException{
         SentimentAnalysis sentimentAnalysis = new SentimentAnalysis();
         AnalyzerParser parser = new AnalyzerParser();
-        HttpResponse jsonResponse = sentimentAnalysis.requestResponse();
+        HttpResponse jsonResponse = sentimentAnalysis.requestResponse("I am a dwarf paladin");
         JsonElement response = parser.parseResponse(jsonResponse.getRawBody());
         Assert.assertNotNull(response);
     }
