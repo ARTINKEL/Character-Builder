@@ -2,6 +2,10 @@ package edu.bsu.cs222;
 
 public class Keywords {
 
+    public enum RACES {
+        Elf, Dwarf, Gnome, Human, Dragonborn, Halfling, HalfOrc, HalfElf, Tiefling;
+    }
+
     public enum ELF_KEYWORDS {
         Elf("Elf", 20), Nature("Nature", 5), Fey("Fey", 8), Feywild("Feywild", 8);
 
@@ -99,6 +103,10 @@ public class Keywords {
             this.name = name;
             this.weight = weight;
         }
+    }
+
+    public enum CLASSES {
+        Barbarian, Bard, Cleric, Druid, Fighter, Monk, Paladin, Ranger, Rogue, Sorcerer, Wizard, Warlock;
     }
 
     public enum BARBARIAN_KEYWORDS {

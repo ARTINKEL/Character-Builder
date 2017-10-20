@@ -5,21 +5,21 @@ import org.junit.Test;
 
 import java.util.List;
 
-public class TestMapper {
+public class TestResponseParser {
 
     @Test
     public void testSplitResponse() {
         Response response = new Response("I am good.", "P");
-        Mapper mapper = new Mapper();
-        List<String> mapperResult = mapper.splitResponse(response);
+        ResponseParser responseParser = new ResponseParser();
+        List<String> mapperResult = responseParser.splitResponse(response);
         Assert.assertNotNull(mapperResult);
     }
 
     @Test
     public void testSplitResponse_GetFirstIndex() {
         Response response = new Response("I am good.", "P");
-        Mapper mapper = new Mapper();
-        List<String> mapperResult = mapper.splitResponse(response);
+        ResponseParser responseParser = new ResponseParser();
+        List<String> mapperResult = responseParser.splitResponse(response);
         Assert.assertEquals(mapperResult.get(0), "I");
     }
 }
