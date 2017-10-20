@@ -1,8 +1,10 @@
 package edu.bsu.cs222;
 
-public class Mapper {
+import java.util.Arrays;
+import java.util.List;
 
-    public String processResponse() {
-        return null;
+public class Mapper {
+    public List<String> splitResponse(Response response) {
+        return Arrays.asList(response.getResponseText().split(" "));
     }
 }

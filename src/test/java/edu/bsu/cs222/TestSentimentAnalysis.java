@@ -1,6 +1,5 @@
 package edu.bsu.cs222;
 
-import com.google.gson.JsonElement;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import org.junit.Assert;
@@ -18,7 +17,7 @@ public class TestSentimentAnalysis {
     @Test
     public void testAnalyzerParser() throws UnirestException{
         SentimentAnalysis sentimentAnalysis = new SentimentAnalysis();
-        AnalyzerParser parser = new AnalyzerParser();
+        SentimentAnalyzerParser parser = new SentimentAnalyzerParser();
         HttpResponse jsonResponse = sentimentAnalysis.requestResponse("I am a human");
         String response = parser.parseResponse(jsonResponse.getRawBody());
         Assert.assertNotNull(response);
