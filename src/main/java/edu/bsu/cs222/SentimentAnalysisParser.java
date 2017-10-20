@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
-public class SentimentAnalyzerParser {
+public class SentimentAnalysisParser {
     public String parseResponse(InputStream inputStream) {
         JsonParser parser = new JsonParser();
         Reader reader = new InputStreamReader(inputStream);

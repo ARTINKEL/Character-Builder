@@ -13,18 +13,4 @@ public class TestSentimentAnalysis {
         HttpResponse jsonResponse = sentimentAnalysis.requestResponse("I am a dwarf paladin");
         Assert.assertNotNull(jsonResponse.getRawBody());
     }
-
-    @Test
-    public void testAnalyzerParser() throws UnirestException{
-        SentimentAnalysis sentimentAnalysis = new SentimentAnalysis();
-        SentimentAnalyzerParser parser = new SentimentAnalyzerParser();
-        HttpResponse jsonResponse = sentimentAnalysis.requestResponse("I am a human");
-        String response = parser.parseResponse(jsonResponse.getRawBody());
-        Assert.assertNotNull(response);
-    }
-
-    @Test
-    public void testAnalyzerParser_() {
-
-    }
 }
