@@ -25,7 +25,7 @@ public class Keywords {
     }
 
     public enum GNOME_KEYWORDS {
-        Gnome("Gnome", 20);
+        Gnome("Gnome", 20), Short("Short", 10);
 
         private int weight;
         private String name;
@@ -36,7 +36,7 @@ public class Keywords {
     }
 
     public enum DRAGONBORN_KEYWORDS {
-        Dragonborn("Dragonborn", 20);
+        Dragonborn("Dragonborn", 20), Scales("Scales", 20);
 
         private int weight;
         private String name;
@@ -58,7 +58,7 @@ public class Keywords {
     }
 
     public enum HALFLING_KEYWORDS {
-        Halfling("Halfling", 20);
+        Halfling("Halfling", 20), Short("Short", 10);
 
         private int weight;
         private String name;
@@ -69,7 +69,7 @@ public class Keywords {
     }
 
     public enum HALFORC_KEYWORDS {
-        HalfOrc("Half-Orc", 20);
+        HalfOrc("Half-Orc", 20), Tusk("Tusk", 20), Tusks("Tusks", 20);
 
         private int weight;
         private String name;
@@ -80,7 +80,7 @@ public class Keywords {
     }
 
     public enum TIEFLING_KEYWORDS {
-        Tiefling("Tiefling", 20);
+        Tiefling("Tiefling", 20), Tail("Tail", 20), Horns("Horns", 15);
 
         private int weight;
         private String name;
@@ -96,6 +96,138 @@ public class Keywords {
         private int weight;
         private String name;
         HALFELF_KEYWORDS(String name, int weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+    }
+
+    public enum BARBARIAN_KEYWORDS {
+        Barbarian("Barbarian", 20);
+
+        private int weight;
+        private String name;
+        BARBARIAN_KEYWORDS(String name, int weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+    }
+
+    public enum BARD_KEYWORDS {
+        Bard("Bard", 20);
+
+        private int weight;
+        private String name;
+        BARD_KEYWORDS(String name, int weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+    }
+
+    public enum CLERIC_KEYWORDS {
+        Cleric("Cleric", 20);
+
+        private int weight;
+        private String name;
+        CLERIC_KEYWORDS(String name, int weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+    }
+
+    public enum DRUID_KEYWORDS {
+        Druid("Druid", 20);
+
+        private int weight;
+        private String name;
+        DRUID_KEYWORDS(String name, int weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+    }
+
+    public enum FIGHTER_KEYWORDS {
+        Fighter("Fighter", 20);
+
+        private int weight;
+        private String name;
+        FIGHTER_KEYWORDS(String name, int weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+    }
+
+    public enum MONK_KEYWORDS {
+        Monk("Monk", 20);
+
+        private int weight;
+        private String name;
+        MONK_KEYWORDS(String name, int weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+    }
+
+    public enum PALADIN_KEYWORDS {
+        Paladin("Paladin", 20);
+
+        private int weight;
+        private String name;
+        PALADIN_KEYWORDS(String name, int weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+    }
+
+    public enum RANGER_KEYWORDS {
+        RANGER("RANGER", 20);
+
+        private int weight;
+        private String name;
+        RANGER_KEYWORDS(String name, int weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+    }
+
+    public enum ROGUE_KEYWORDS {
+        Rogue("Rogue", 20), Stealth("Stealth", 15);
+
+        private int weight;
+        private String name;
+        ROGUE_KEYWORDS(String name, int weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+    }
+
+    public enum SORCERER_KEYWORDS {
+        Sorcerer("Sorcerer", 20);
+
+        private int weight;
+        private String name;
+        SORCERER_KEYWORDS(String name, int weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+    }
+
+    public enum WIZARD_KEYWORDS {
+        Wizard("Wizard", 20);
+
+        private int weight;
+        private String name;
+        WIZARD_KEYWORDS(String name, int weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+    }
+
+    public enum WARLOCK_KEYWORDS {
+        Warlock("Warlock", 20), Patron("Patron", 10);
+
+        private int weight;
+        private String name;
+        WARLOCK_KEYWORDS(String name, int weight) {
             this.name = name;
             this.weight = weight;
         }

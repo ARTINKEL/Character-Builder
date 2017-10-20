@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Mapper {
+
     public List<String> splitResponse(Response response) {
         return Arrays.asList(response.getResponseText().split(" "));
     }
