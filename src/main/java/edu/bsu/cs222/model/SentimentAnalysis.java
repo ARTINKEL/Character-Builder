@@ -1,4 +1,4 @@
-package edu.bsu.cs222;
+package edu.bsu.cs222.model;
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
