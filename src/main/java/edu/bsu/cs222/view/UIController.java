@@ -24,7 +24,7 @@ public class UIController extends Application {
     private SentimentAnalysisParser sentimentAnalysisParser = new SentimentAnalysisParser();
 
     private Questions questions = new Questions();
-    private HashMap<Integer, String> responseMap = new HashMap<>();
+    private HashMap<Integer, String> inputMap = new HashMap<>();
     private ErrorHandler errorHandler = new ErrorHandler();
     private TextField inputTextField = new TextField();
 
@@ -83,9 +83,7 @@ public class UIController extends Application {
             }
         });
 
-        clearButton.setOnAction(event -> {
-            inputTextField.setText("");
-        });
+        clearButton.setOnAction(event -> inputTextField.setText(""));
 
         Scene scene = new Scene(mainBox, WIDTH, HEIGHT);
         primaryStage.setScene(scene);
@@ -93,7 +91,7 @@ public class UIController extends Application {
     }
 
     private void recordResponse() {
-        responseMap.put(currentQuestion, inputTextField.getText());
+        inputMap.put(currentQuestion, inputTextField.getText());
         inputTextField.setText("");
     }
 
@@ -112,11 +110,11 @@ public class UIController extends Application {
     }
 
     private void populateTextField() {
-        inputTextField.setText(responseMap.get(currentQuestion));
+        inputTextField.setText(inputMap.get(currentQuestion));
     }
 
     private void removeResponse() {
-        responseMap.remove(currentQuestion);
+        inputMap.remove(currentQuestion);
     }
 
     private void displayResult() {
