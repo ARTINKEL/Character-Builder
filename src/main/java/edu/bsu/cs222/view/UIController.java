@@ -1,9 +1,7 @@
 package edu.bsu.cs222.view;
 
-import edu.bsu.cs222.model.ErrorHandler;
-import edu.bsu.cs222.model.Questions;
-import edu.bsu.cs222.model.ResponseParser;
-import edu.bsu.cs222.model.SentimentAnalysisParser;
+import com.mashape.unirest.http.exceptions.UnirestException;
+import edu.bsu.cs222.model.*;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -20,7 +18,6 @@ public class UIController extends Application {
     private final int WIDTH = 500;
     private final int HEIGHT = 100;
 
-    private ResponseParser responseParser = new ResponseParser();
     private SentimentAnalysisParser sentimentAnalysisParser = new SentimentAnalysisParser();
 
     private Questions questions = new Questions();
@@ -60,6 +57,11 @@ public class UIController extends Application {
                 return;
             } else if (currentQuestion == 10) {
                 recordResponse();
+                try {
+                    parseForSentimentAnalysis();
+                } catch (UnirestException e) {
+                    e.printStackTrace();
+                }
                 displayResult();
             } else {
                 errorLabel.setText(null);
@@ -103,6 +105,10 @@ public class UIController extends Application {
     private void decrementQuestion() {
         currentQuestion--;
         populateQuestion();
+    }
+
+    private void parseForSentimentAnalysis() throws UnirestException {
+        sentimentAnalysisParser.createResponseObjects(inputMap);
     }
 
     private void populateQuestion() {

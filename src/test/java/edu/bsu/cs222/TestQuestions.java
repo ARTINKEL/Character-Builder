@@ -5,9 +5,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class TestQuestions {
-
     @Test
-    public void testPopulateQuestions() {
+    public void testGetQuestions() {
         Questions questions = new Questions();
         String question = questions.getQuestion(1);
         Assert.assertEquals(question, "How do you fight?");
