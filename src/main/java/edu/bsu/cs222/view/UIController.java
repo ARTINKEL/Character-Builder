@@ -1,5 +1,6 @@
 package edu.bsu.cs222.view;
 
+import edu.bsu.cs222.model.ErrorHandler;
 import edu.bsu.cs222.model.ResponseParser;
 import edu.bsu.cs222.model.SentimentAnalysisParser;
 import javafx.application.Application;
@@ -18,6 +19,7 @@ public class UIController extends Application{
 
     private ResponseParser responseParser = new ResponseParser();
     private SentimentAnalysisParser sentimentAnalysisParser = new SentimentAnalysisParser();
+    private ErrorHandler errorHandler = new ErrorHandler();
 
     public void start (Stage primaryStage) throws Exception {
         primaryStage.setTitle("Sentiment Analyzer");
@@ -38,7 +40,7 @@ public class UIController extends Application{
 
         submitButton.setOnAction(event -> {
             if (inputTextField.getText().isEmpty()) {
-                errorLabel.setText("Text field must not be blank.");
+                errorLabel.setText(errorHandler.returnError("blankField"));
                 return;
             }
         });
