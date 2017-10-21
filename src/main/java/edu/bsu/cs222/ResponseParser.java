@@ -9,5 +9,5 @@ public class ResponseParser {
         return Arrays.asList(response.getResponseText().split(" "));
     }
 
-    
+
 }
