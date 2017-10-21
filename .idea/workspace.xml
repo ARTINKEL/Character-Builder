@@ -1,46 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7e3b9b4-57ea-47ec-afd8-ad329c744df4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Questions.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$BARBARIAN_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$BARD_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$CLASSES.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$CLERIC_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$DRAGONBORN_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$DRUID_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$DWARF_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$ELF_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$FIGHTER_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$GNOME_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$HALFELF_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$HALFLING_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$HALFORC_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$HUMAN_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$MONK_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$PALADIN_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$RACES.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$RANGER_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$ROGUE_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$SORCERER_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$TIEFLING_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$WARLOCK_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords$WIZARD_KEYWORDS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Keywords.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Mapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/Response.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/ResponseParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/SentimentAnalysis.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/SentimentAnalysisParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/view/UIController.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestKeywords.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestKeywords.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestResponse.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestResponse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestResponseParser.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestResponseParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestSentimentAnalysis.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestSentimentAnalysis.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestSentimentAnalysisParser.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestSentimentAnalysisParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
-    </list>
+    <list default="true" id="f7e3b9b4-57ea-47ec-afd8-ad329c744df4" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -205,7 +166,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1044" />
     <option name="y" value="16" />
     <option name="width" value="1400" />
@@ -462,7 +423,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1426" extended-state="7" />
+    <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
