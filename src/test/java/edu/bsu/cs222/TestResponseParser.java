@@ -1,7 +1,5 @@
 package edu.bsu.cs222;
 
-import edu.bsu.cs222.model.Response;
-import edu.bsu.cs222.model.ResponseParser;
 import org.junit.Assert;
 import org.junit.Test;
 
