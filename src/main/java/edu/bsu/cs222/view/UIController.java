@@ -1,7 +1,6 @@
 package edu.bsu.cs222.view;
 
 import edu.bsu.cs222.model.ErrorHandler;
-import edu.bsu.cs222.model.Questions;
 import edu.bsu.cs222.model.ResponseParser;
 import edu.bsu.cs222.model.SentimentAnalysisParser;
 import javafx.application.Application;
@@ -13,8 +12,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-import java.util.HashMap;
-
 public class UIController extends Application{
 
     private final int WIDTH = 500;
@@ -22,104 +19,34 @@ public class UIController extends Application{
 
     private ResponseParser responseParser = new ResponseParser();
     private SentimentAnalysisParser sentimentAnalysisParser = new SentimentAnalysisParser();
-
-    private Questions questions = new Questions();
-    private HashMap<Integer, String> responseMap = new HashMap<>();
     private ErrorHandler errorHandler = new ErrorHandler();
-    private TextField inputTextField = new TextField();
-
-    int currentQuestion = 1;
-
-    private Label questionLabel = new Label(questions.getQuestion(currentQuestion));
-    private Label errorLabel = new Label();
-    private Label resultLabel = new Label();
 
     public void start (Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Sentiment Analyzer v0.1");
+        primaryStage.setTitle("Sentiment Analyzer");
 
         final VBox mainBox = new VBox();
+        final Label titleLabel = new Label("??? Question here ???");
+        mainBox.getChildren().add(titleLabel);
 
-        mainBox.getChildren().add(questionLabel);
+        final TextField inputTextField = new TextField();
         mainBox.getChildren().add(inputTextField);
-        mainBox.getChildren().add(errorLabel);
 
-        final Button backButton = new Button("Back");
-        final Button clearButton = new Button("Clear");
-        final Button nextButton = new Button("Next");
-        backButton.setVisible(false);
-
+        final Button submitButton = new Button("Submit");
+        // Add a Clear button?
+        final Label errorLabel = new Label();
         final HBox secBox = new HBox();
-
-        secBox.getChildren().addAll(backButton, clearButton, nextButton);
+        secBox.getChildren().addAll(submitButton, errorLabel);
         mainBox.getChildren().add(secBox);
 
-        mainBox.getChildren().add(resultLabel);
-
-        nextButton.setOnAction(event -> {
+        submitButton.setOnAction(event -> {
             if (inputTextField.getText().isEmpty()) {
                 errorLabel.setText(errorHandler.returnError("blankField"));
                 return;
-            } else if (currentQuestion == 10) {
-                recordResponse();
-                displayResult();
-            } else {
-                errorLabel.setText(null);
-                recordResponse();
-                if (currentQuestion != 10) {
-                    incrementQuestion();
-                    if (currentQuestion == 10) {
-                        nextButton.setText("Submit");
-                    }
-                }
-            } backButton.setVisible(true);
-        });
-
-        backButton.setOnAction(event -> {
-            decrementQuestion();
-            populateTextField();
-            removeResponse();
-            if (currentQuestion == 1) {
-                backButton.setVisible(false);
             }
-        });
-
-        clearButton.setOnAction(event -> {
-            inputTextField.setText("");
         });
 
         Scene scene = new Scene(mainBox, WIDTH, HEIGHT);
         primaryStage.setScene(scene);
         primaryStage.show();
-    }
-
-    private void recordResponse() {
-        responseMap.put(currentQuestion, inputTextField.getText());
-        inputTextField.setText("");
-    }
-
-    private void incrementQuestion() {
-        currentQuestion++;
-        populateQuestion();
-    }
-
-    private void decrementQuestion() {
-        currentQuestion--;
-        populateQuestion();
-    }
-
-    private void populateQuestion() {
-        questionLabel.setText(questions.getQuestion(currentQuestion));
-    }
-
-    private void populateTextField() {
-        inputTextField.setText(responseMap.get(currentQuestion));
-    }
-
-    private void removeResponse() {
-        responseMap.remove(currentQuestion);
-    }
-
-    private void displayResult() {
-        resultLabel.setText("SUCCESS");
     }
 }
