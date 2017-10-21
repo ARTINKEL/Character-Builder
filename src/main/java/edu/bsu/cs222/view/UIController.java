@@ -1,9 +1,9 @@
-package view;
+package edu.bsu.cs222.view;
 
-import edu.bsu.cs222.ErrorHandler;
-import edu.bsu.cs222.Questions;
-import edu.bsu.cs222.ResponseParser;
-import edu.bsu.cs222.SentimentAnalysisParser;
+import edu.bsu.cs222.model.ErrorHandler;
+import edu.bsu.cs222.model.Questions;
+import edu.bsu.cs222.model.ResponseParser;
+import edu.bsu.cs222.model.SentimentAnalysisParser;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 
 import java.util.HashMap;
 
-public class UIController extends Application{
+public class UIController extends Application {
 
     private final int WIDTH = 500;
     private final int HEIGHT = 100;
@@ -53,7 +53,7 @@ public class UIController extends Application{
         secBox.getChildren().addAll(backButton, clearButton, nextButton);
         mainBox.getChildren().add(secBox);
         mainBox.getChildren().add(resultLabel);
-        
+
         nextButton.setOnAction(event -> {
             if (inputTextField.getText().isEmpty()) {
                 errorLabel.setText(errorHandler.returnError("blankField"));
@@ -87,40 +87,39 @@ public class UIController extends Application{
             inputTextField.setText("");
         });
 
-            Scene scene = new Scene(mainBox, WIDTH, HEIGHT);
-            primaryStage.setScene(scene);
-            primaryStage.show();
-        }
+        Scene scene = new Scene(mainBox, WIDTH, HEIGHT);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
 
-        private void recordResponse() {
-            responseMap.put(currentQuestion, inputTextField.getText());
-            inputTextField.setText("");
-        }
+    private void recordResponse() {
+        responseMap.put(currentQuestion, inputTextField.getText());
+        inputTextField.setText("");
+    }
 
-        private void incrementQuestion() {
-            currentQuestion++;
-            populateQuestion();
-        }
+    private void incrementQuestion() {
+        currentQuestion++;
+        populateQuestion();
+    }
 
-        private void decrementQuestion() {
-            currentQuestion--;
-            populateQuestion();
-        }
+    private void decrementQuestion() {
+        currentQuestion--;
+        populateQuestion();
+    }
 
-        private void populateQuestion() {
-            questionLabel.setText(questions.getQuestion(currentQuestion));
-        }
+    private void populateQuestion() {
+        questionLabel.setText(questions.getQuestion(currentQuestion));
+    }
 
-        private void populateTextField() {
-            inputTextField.setText(responseMap.get(currentQuestion));
-        }
+    private void populateTextField() {
+        inputTextField.setText(responseMap.get(currentQuestion));
+    }
 
-        private void removeResponse() {
-            responseMap.remove(currentQuestion);
-        }
+    private void removeResponse() {
+        responseMap.remove(currentQuestion);
+    }
 
-        private void displayResult() {
-            resultLabel.setText("SUCCESS");
-        }
+    private void displayResult() {
+        resultLabel.setText("SUCCESS");
     }
 }

@@ -1,4 +1,4 @@
-package edu.bsu.cs222;
+package edu.bsu.cs222.model;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;

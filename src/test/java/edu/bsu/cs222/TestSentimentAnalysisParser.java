@@ -2,6 +2,8 @@ package edu.bsu.cs222;
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.exceptions.UnirestException;
+import edu.bsu.cs222.model.SentimentAnalysis;
+import edu.bsu.cs222.model.SentimentAnalysisParser;
 import org.junit.Assert;
 import org.junit.Test;
 
