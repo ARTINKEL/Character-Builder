@@ -46,6 +46,6 @@ public class TestResponseParser {
         //System.out.println(mapperResult);
         //System.out.println(stuff);
         reader.close();
-        Assert.assertEquals("", "");
+        Assert.assertTrue(true);
     }
 }

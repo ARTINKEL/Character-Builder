@@ -17,7 +17,7 @@ public class SentimentAnalysisParser {
 
     private final static int NUMBER_OF_QUESTIONS = 10;
     private SentimentAnalysis sentimentAnalysis = new SentimentAnalysis();
-    private List<Response> responseList = new ArrayList<>();
+    private ArrayList<Response> responseList = new ArrayList<>();
 
     public void createResponseObjects(HashMap<Integer, String> inputMap) throws UnirestException {
         for (int i = 1; i <= NUMBER_OF_QUESTIONS; i++) {
@@ -31,7 +31,7 @@ public class SentimentAnalysisParser {
         return parseResponse(httpResponse.getRawBody());
     }
 
-    public List<Response> getResponseList() {
+    public ArrayList<Response> getResponseList() {
         return responseList;
     }
 
