@@ -39,7 +39,7 @@ public class UIController extends Application {
     private String classResult = "";
 
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Character Designer v0.1");
+        primaryStage.setTitle("Character Designer v0.1.0");
 
         GridPane grid = new GridPane();
         grid.setAlignment(Pos.TOP_CENTER);
