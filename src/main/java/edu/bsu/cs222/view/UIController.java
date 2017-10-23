@@ -111,7 +111,6 @@ public class UIController extends Application {
         });
 
         clearButton.setOnAction(event -> inputTextArea.setText(""));
-
         Scene scene = new Scene(grid, WIDTH, HEIGHT);
         primaryStage.setScene(scene);
         primaryStage.show();
