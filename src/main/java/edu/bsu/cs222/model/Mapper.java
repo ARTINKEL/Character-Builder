@@ -61,7 +61,6 @@ public class Mapper {
     };
 
     public void findSimilarities() {
-        ResponseParser parser = new ResponseParser();
         SentimentAnalysisParser sentimentAnalysisParser = new SentimentAnalysisParser();
 
         ArrayList<Response> resultsList = sentimentAnalysisParser.getResponseList();
@@ -69,12 +68,12 @@ public class Mapper {
 
         // Responses regarding class
         for (int i = 1; i <= 5; i++) {
-            mapperResult = parser.splitResponse(resultsList.get(i));
+            //mapperResult = parser.splitResponse(resultsList.get(i));
         }
 
         // Responses regarding race
         for (int i = 6; i <= 10; i++) {
-            mapperResult = parser.splitResponse(resultsList.get(i));
+            //mapperResult = parser.splitResponse(resultsList.get(i));
         }
     }
 

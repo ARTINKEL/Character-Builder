@@ -144,11 +144,7 @@ public class UIController extends Application {
                 backButton.setVisible(false);
             }
             */
-            try {
-                mapper.startMapper(responseList);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+                //mapper.startMapper(responseList);
         });
 
         clearButton.setOnAction(event -> inputTextField.setText(""));
@@ -175,7 +171,7 @@ public class UIController extends Application {
     }
 
     private void parseForSentimentAnalysis() throws UnirestException {
-        responseList = sentimentAnalysisParser.createResponseObjects(inputMap);
+        //responseList = sentimentAnalysisParser.createResponseObjects(inputMap);
     }
 
     private void populateQuestion() {
