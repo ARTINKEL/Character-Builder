@@ -40,17 +40,17 @@ public class Mapper {
 
     private ContentSplitter contentSplitter = new ContentSplitter();
     private ContentCreator contentCreator = new ContentCreator();
-
     private ArrayList<Response> responsesList = new ArrayList<>();
     private ArrayList<ArrayList<String>> responseMasterList = new ArrayList<>();
     private ArrayList<ArrayList<String>> classContentMasterList = new ArrayList<>();
     private ArrayList<ArrayList<String>> raceContentMasterList = new ArrayList<>();
-
-    private ArrayList<String> categoryFileNamesList = new ArrayList<>();
     private ArrayList<ArrayList<String>> categoryFileContentMasterList = new ArrayList<>();
-
+    private ArrayList<String> categoryFileNamesList = new ArrayList<>();
     private HashMap<String, Integer> frequencyList = new HashMap<>();
 
+    //Suppress this warning because this variable is used, but never accessed on purpose.
+    //No reason to warn us of something we intended to do.
+    @SuppressWarnings("unused")
     private InputMap inputMap = new InputMap();
 
     public Mapper(InputMap inputMap) throws IOException {
@@ -60,11 +60,10 @@ public class Mapper {
         populateFileContentMasterList();
     }
 
-    public ArrayList<Response> createResponseObjectsList(InputMap inputMap) {
+    public void createResponseObjectsList(InputMap inputMap) {
         for (int i = 1; i <= inputMap.getInputMap().size(); i++) {
             responsesList.add(inputMap.getInputMap().get(i));
         }
-        return responsesList;
     }
 
     private ArrayList<String> splitResponse(Response response) {
@@ -142,6 +141,7 @@ public class Mapper {
                 maxFrequency = frequency;
             }
         }
+        assert maxFrequency != null;
         return maxFrequency.getKey();
     }
 
