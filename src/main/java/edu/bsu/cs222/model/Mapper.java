@@ -53,16 +53,12 @@ public class Mapper {
 
     private InputMap inputMap = new InputMap();
 
-    int start = 0;
-    int end = 0;
-
     public Mapper(InputMap inputMap) throws IOException {
         this.inputMap = inputMap;
         createResponseObjectsList(inputMap);
         populateResponseMasterList();
         populateFileContentMasterList();
     }
-
 
     public ArrayList<Response> createResponseObjectsList(InputMap inputMap) {
         for (int i = 1; i <= inputMap.getInputMap().size(); i++) {
@@ -160,5 +156,4 @@ public class Mapper {
         }
         return result;
     }
-
 }

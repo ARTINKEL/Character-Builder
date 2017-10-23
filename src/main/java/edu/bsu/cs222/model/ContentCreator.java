@@ -3,6 +3,7 @@ package edu.bsu.cs222.model;
 import java.io.*;
 
 public class ContentCreator {
+
     public Response createResponse(String response) {
         return new Response(response);
     }
@@ -18,5 +19,4 @@ public class ContentCreator {
         reader.close();
         return fileText;
     }
-
 }

@@ -73,25 +73,6 @@ public class UIController extends Application {
 
         grid.add(resultLabel, 0, 8);
 
-        /*
-        final VBox mainBox = new VBox();
-
-        mainBox.getChildren().add(questionLabel);
-        mainBox.getChildren().add(inputTextField);
-        mainBox.getChildren().add(errorLabel);
-
-        final Button backButton = new Button("Back");
-        final Button clearButton = new Button("Clear");
-        final Button nextButton = new Button("Next");
-        backButton.setVisible(false);
-
-        final HBox secBox = new HBox();
-
-        secBox.getChildren().addAll(backButton, clearButton, nextButton);
-        mainBox.getChildren().add(secBox);
-        mainBox.getChildren().add(resultLabel);
-        */
-
         nextButton.setOnAction(event -> {
             if (inputTextField.getText().isEmpty()) {
                 errorLabel.setText(errorHandler.returnError("blankField"));
@@ -129,7 +110,6 @@ public class UIController extends Application {
 
         clearButton.setOnAction(event -> inputTextField.setText(""));
 
-        //CHANGED mainBox to GRID
         Scene scene = new Scene(grid, WIDTH, HEIGHT);
         primaryStage.setScene(scene);
         primaryStage.show();
