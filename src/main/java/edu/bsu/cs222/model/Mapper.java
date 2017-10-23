@@ -137,7 +137,7 @@ public class Mapper {
         Map.Entry<String, Integer> maxFrequency = null;
 
         for (Map.Entry<String, Integer> frequency : resultMap.entrySet()) {
-            if (maxFrequency == null || frequency.getValue().compareTo(maxFrequency.getValue()) > 0) {
+            if (maxFrequency == null || frequency.getValue().compareTo(maxFrequency.getValue()) >= 0) {
                 maxFrequency = frequency;
             }
         }
