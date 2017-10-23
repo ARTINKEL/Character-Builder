@@ -20,7 +20,7 @@ import java.io.IOException;
 public class UIController extends Application {
 
     private final int WIDTH = 500;
-    private final int HEIGHT = 500;
+    private final int HEIGHT = 400;
 
     private InputMap inputMap = new InputMap();
     private ContentCreator contentCreator = new ContentCreator();
@@ -39,7 +39,7 @@ public class UIController extends Application {
     private String classResult = "";
 
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Sentiment Analyzer v0.1");
+        primaryStage.setTitle("Character Designer v0.1");
 
         GridPane grid = new GridPane();
         grid.setAlignment(Pos.TOP_CENTER);
