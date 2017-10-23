@@ -20,8 +20,14 @@ public class SentimentAnalysisParser {
     private ArrayList<Response> responseList = new ArrayList<>();
 
     public void createResponseObjects(HashMap<Integer, String> inputMap) throws UnirestException {
-        for (int i = 1; i <= NUMBER_OF_QUESTIONS; i++) {
-            Response response = new Response(inputMap.get(i), useSentimentAnalysis(inputMap.get(i)));
+        for (int i = 1; i <= inputMap.size(); i++) {
+
+            /*
+                DON'T FORGET TO CHANGE, DAMMIT
+                useSentimentAnalysis(inputMap.get(i))
+             */
+
+            Response response = new Response(inputMap.get(i), "");
             responseList.add(response);
         }
     }

@@ -11,6 +11,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class UIController extends Application {
@@ -18,12 +20,14 @@ public class UIController extends Application {
     private final int WIDTH = 500;
     private final int HEIGHT = 100;
 
-    private SentimentAnalysisParser sentimentAnalysisParser = new SentimentAnalysisParser();
+    public SentimentAnalysisParser sentimentAnalysisParser = new SentimentAnalysisParser();
+    public ArrayList<Response> responseList = new ArrayList<>();
 
     private Questions questions = new Questions();
     private HashMap<Integer, String> inputMap = new HashMap<>();
     private ErrorHandler errorHandler = new ErrorHandler();
     private TextField inputTextField = new TextField();
+    private Mapper mapper = new Mapper();
 
     int currentQuestion = 1;
 
@@ -55,33 +59,40 @@ public class UIController extends Application {
             if (inputTextField.getText().isEmpty()) {
                 errorLabel.setText(errorHandler.returnError("blankField"));
                 return;
-            } else if (currentQuestion == 10) {
-                recordResponse();
-                try {
-                    parseForSentimentAnalysis();
-                } catch (UnirestException e) {
-                    e.printStackTrace();
-                }
-                displayResult();
             } else {
                 errorLabel.setText(null);
                 recordResponse();
+                if (currentQuestion == 10) {
+                    try {
+                        parseForSentimentAnalysis();
+                    } catch (UnirestException e) {
+                        e.printStackTrace();
+                    }
+                }
                 if (currentQuestion != 10) {
                     incrementQuestion();
                     if (currentQuestion == 10) {
                         nextButton.setText("Submit");
                     }
                 }
+                displayResult();
             }
             backButton.setVisible(true);
         });
 
         backButton.setOnAction(event -> {
+            /*
             decrementQuestion();
             populateTextField();
             removeResponse();
             if (currentQuestion == 1) {
                 backButton.setVisible(false);
+            }
+            */
+            try {
+                mapper.startMapper(responseList);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         });
 
@@ -95,6 +106,7 @@ public class UIController extends Application {
     private void recordResponse() {
         inputMap.put(currentQuestion, inputTextField.getText());
         inputTextField.setText("");
+        System.out.println(inputMap.get(currentQuestion));
     }
 
     private void incrementQuestion() {
@@ -108,7 +120,7 @@ public class UIController extends Application {
     }
 
     private void parseForSentimentAnalysis() throws UnirestException {
-        sentimentAnalysisParser.createResponseObjects(inputMap);
+        responseList = sentimentAnalysisParser.createResponseObjects(inputMap);
     }
 
     private void populateQuestion() {
