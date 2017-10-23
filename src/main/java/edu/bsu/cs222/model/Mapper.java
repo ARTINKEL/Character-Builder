@@ -31,7 +31,7 @@ public class Mapper {
 
     private ArrayList<String> raceFileNamesList = new ArrayList<String>() {
         {
-            add("Elf");
+            add("Elf.txt");
             add("Dwarf");
             add("Gnome");
             add("Human");
