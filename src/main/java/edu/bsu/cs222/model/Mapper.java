@@ -1,130 +1,92 @@
 package edu.bsu.cs222.model;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.List;
 
 public class Mapper {
+
+    private int elfTotal;
+    private int dwarfTotal;
+    private int humanTotal;
+    private int gnomeTotal;
+    private int dragonbornTotal;
+    private int halfelfTotal;
+    private int halforcTotal;
+    private int tieflingTotal;
+    private int halflingTotal;
+
+    private int barbarianTotal;
+    private int bardTotal;
+    private int clericTotal;
+    private int druidTotal;
+    private int fighterTotal;
+    private int monkTotal;
+    private int paladinTotal;
+    private int rangerTotal;
+    private int rogueTotal;
+    private int sorcererTotal;
+    private int warlockTotal;
+    private int wizardTotal;
 
     private ArrayList<String> raceFileNamesList = new ArrayList<String>() {
         {
             add("Elf.txt");
-            add("Dwarf.txt");
-            add("Gnome.txt");
-            add("Human.txt");
-            add("Tiefling.txt");
-            add("Dragonborn.txt");
-            add("Halfling.txt");
-            add("Half-Orc.txt");
-            add("Half-Elf.txt");
+            add("Dwarf");
+            add("Gnome");
+            add("Human");
+            add("Tiefling");
+            add("Dragonborn");
+            add("Halfling");
+            add("Half-Orc");
+            add("Half-Elf");
         }
     };
 
     private ArrayList<String> classFileNamesList = new ArrayList<String>() {
         {
-            add("Barbarian.txt");
-            add("Bard.txt");
-            add("Cleric.txt");
-            add("Druid.txt");
-            add("Fighter.txt");
-            add("Monk.txt");
-            add("Paladin.txt");
-            add("Ranger.txt");
-            add("Rogue.txt");
-            add("Sorcerer.txt");
-            add("Warlock.txt");
-            add("Wizard.txt");
+            add("Barbarian");
+            add("Bard");
+            add("Cleric");
+            add("Druid");
+            add("Fighter");
+            add("Monk");
+            add("Paladin");
+            add("Ranger");
+            add("Rogue");
+            add("Sorcerer");
+            add("Warlock");
+            add("Wizard");
         }
     };
 
-    private ArrayList<ArrayList<String>> responseWordList = new ArrayList<>();
-    private ArrayList<Response> responseList = new ArrayList<>();
-    private HashMap<String, Integer> comparisonResultList = new HashMap<>();
-    private HashMap<String, String> allFileContents = new HashMap<>();
+    public void findSimilarities() {
+        ResponseParser parser = new ResponseParser();
+        SentimentAnalysisParser sentimentAnalysisParser = new SentimentAnalysisParser();
 
-    public void startMapper(ArrayList<Response> responseList) throws IOException {
-        this.responseList = responseList;
-        parseClass();
-        parseRace();
-    }
+        ArrayList<Response> resultsList = sentimentAnalysisParser.getResponseList();
+        List<String> mapperResult;
 
-    public void findSimilarities(ArrayList<ArrayList<String>> responseWordList, String category) throws IOException {
-        ArrayList<String> categoryFileNamesList = new ArrayList<>();
-        if (category.equals("class")) {
-            categoryFileNamesList = classFileNamesList;
-        } else if (category.equals("race")) {
-            categoryFileNamesList = raceFileNamesList;
+        // Responses regarding class
+        for (int i = 1; i <= 5; i++) {
+            mapperResult = parser.splitResponse(resultsList.get(i));
         }
 
-        ArrayList<String> fileContentsList = parseFileContents(categoryFileNamesList);
-
-        for (ArrayList<String> response : responseWordList) {
-            int index = 0;
-
-            for (String contents : fileContentsList) {
-
-                for (String word : response) {
-                    int counter = 0;
-
-                    if (contents.toLowerCase().contains(word.toLowerCase())) {
-                        counter++;
-                    }
-                    comparisonResultList.put(categoryFileNamesList.get(index), counter);
-                }
-                if (index != categoryFileNamesList.size() - 1) {
-                    index++;
-                }
-            }
+        // Responses regarding race
+        for (int i = 6; i <= 10; i++) {
+            mapperResult = parser.splitResponse(resultsList.get(i));
         }
-        for (String contents : fileContentsList) {
-            System.out.println(contents);
-        }
-
-        System.out.print(comparisonResultList.get("Fighter.txt"));
     }
 
-    private ArrayList<String> parseFileContents(ArrayList<String> categoryFileNamesList) throws IOException {
-        ArrayList<String> fileContentsList = new ArrayList<>();
-        for (String fileName : categoryFileNamesList) {
-            processTextFile(fileName);
-            //fileContentsList = parser.splitResponse(allFileContents.get(fileName));
-        }
-        return fileContentsList;
-    }
-
-    private String getBestFit() {
-        return "";
-    }
-
-    private void parseClass() throws IOException {
-        for (int i = 0; i <= 5; i++) {
-            //responseWordList.add(parser.splitResponse(responseList.get(i).getResponseText()));
-        }
-
-        findSimilarities(responseWordList, "class");
-    }
-
-    private void parseRace() throws IOException {
-        for (int i = 6; i < 10; i++) {
-            //responseWordList.add(parser.splitResponse(responseList.get(i).getResponseText()));
-        }
-        findSimilarities(responseWordList, "race");
-    }
-
-    private HashMap<String, String> processTextFile(String fileName) throws IOException {
-        HashMap<String, String> fileContents = new HashMap<>();
+    public String processTextFile(String fileName) throws IOException {
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource(fileName).getFile());
         BufferedReader reader = new BufferedReader(new FileReader(file));
-        String fileText = null;
+        String fileContents = null;
         while (reader.readLine() != null) {
-            fileText += reader.readLine();
-            allFileContents.put(fileName, fileText);
+            fileContents += reader.readLine();
         }
-
         reader.close();
-        return allFileContents;
+        return fileContents;
     }
-
 }
