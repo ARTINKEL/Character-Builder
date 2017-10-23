@@ -1,18 +1,13 @@
 package edu.bsu.cs222.model;
 
 public class Response {
+    private String response;
 
-    private String responseText;
-    private String sentimentResponse;
-
-    public Response(String responseText, String sentimentResponse) {
-        this.responseText = responseText;
-        this.sentimentResponse = sentimentResponse;
+    public Response(String response) {
+        this.response = response;
     }
 
-    public String getResponseText() {
-        return responseText;
+    public String getResponse() {
+        return response;
     }
-
-    public String getSentimentResponse() { return sentimentResponse; }
 }

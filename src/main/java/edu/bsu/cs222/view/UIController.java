@@ -1,52 +1,42 @@
 package edu.bsu.cs222.view;
 
-import com.mashape.unirest.http.exceptions.UnirestException;
 import edu.bsu.cs222.model.*;
 import javafx.application.Application;
-
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class UIController extends Application {
 
-    private final int WIDTH = 600;
-    private final int HEIGHT = 300;
+    private final int WIDTH = 500;
+    private final int HEIGHT = 500;
 
-    public SentimentAnalysisParser sentimentAnalysisParser = new SentimentAnalysisParser();
-    public ArrayList<Response> responseList = new ArrayList<>();
+    private InputMap inputMap = new InputMap();
+    private ContentCreator contentCreator = new ContentCreator();
 
     private Questions questions = new Questions();
-    private HashMap<Integer, String> inputMap = new HashMap<>();
     private ErrorHandler errorHandler = new ErrorHandler();
     private TextField inputTextField = new TextField();
-    private Mapper mapper = new Mapper();
 
-    int currentQuestion = 1;
-
-
-    //private Label appName = new Label("Character Designer");
+    private int currentQuestion = 1;
 
     private Label questionLabel = new Label(questions.getQuestion(currentQuestion));
     private Label errorLabel = new Label();
     private Label resultLabel = new Label();
 
-    //private VBox mainBox = new VBox();
+    private String raceResult = "";
+    private String classResult = "";
 
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Sentiment Analyzer v0.1");
@@ -57,10 +47,10 @@ public class UIController extends Application {
         grid.setVgap(10);
         grid.setPadding(new Insets(25, 25, 25, 25));
 
-        Text scenetitle = new Text("Character Designer");
-        GridPane.setHalignment(scenetitle, HPos.CENTER);
-        scenetitle.setFont(Font.font("Tahoma", FontWeight.BOLD, 20));
-        grid.add(scenetitle, 0, 0, 1, 2);
+        Text sceneTitle = new Text("Character Designer");
+        GridPane.setHalignment(sceneTitle, HPos.CENTER);
+        sceneTitle.setFont(Font.font("Tahoma", FontWeight.BOLD, 20));
+        grid.add(sceneTitle, 0, 0, 1, 2);
         GridPane.setHalignment(questionLabel, HPos.CENTER);
         grid.add(questionLabel, 0, 2);
 
@@ -77,23 +67,15 @@ public class UIController extends Application {
         Button clearButton = new Button("Clear");
         backButton.setVisible(false);
 
-
-
         grid.add(nextButton, 0, 5);
         grid.add(backButton, 0, 7);
         grid.add(clearButton, 0, 6);
 
-
-
-
-
-
+        grid.add(resultLabel, 0, 8);
 
         /*
-        mainBox = new VBox();
+        final VBox mainBox = new VBox();
 
-
-        mainBox.getChildren().add(appName).setAlignment(Pos.CENTER);
         mainBox.getChildren().add(questionLabel);
         mainBox.getChildren().add(inputTextField);
         mainBox.getChildren().add(errorLabel);
@@ -117,47 +99,46 @@ public class UIController extends Application {
             } else {
                 errorLabel.setText(null);
                 recordResponse();
-                if (currentQuestion == 10) {
-                    try {
-                        parseForSentimentAnalysis();
-                    } catch (UnirestException e) {
-                        e.printStackTrace();
-                    }
-                }
                 if (currentQuestion != 10) {
                     incrementQuestion();
                     if (currentQuestion == 10) {
                         nextButton.setText("Submit");
                     }
+                } else {
+                    try {
+                        Mapper mapper = new Mapper(inputMap);
+                        raceResult = mapper.calculateResult("race");
+                        classResult = mapper.calculateResult("class");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    displayResult();
                 }
-                displayResult();
             }
             backButton.setVisible(true);
         });
 
         backButton.setOnAction(event -> {
-            /*
             decrementQuestion();
             populateTextField();
             removeResponse();
             if (currentQuestion == 1) {
                 backButton.setVisible(false);
             }
-            */
-                //mapper.startMapper(responseList);
         });
 
         clearButton.setOnAction(event -> inputTextField.setText(""));
 
+        //CHANGED mainBox to GRID
         Scene scene = new Scene(grid, WIDTH, HEIGHT);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
     private void recordResponse() {
-        inputMap.put(currentQuestion, inputTextField.getText());
+        Response response = contentCreator.createResponse(inputTextField.getText());
+        inputMap.addInput(currentQuestion, response);
         inputTextField.setText("");
-        System.out.println(inputMap.get(currentQuestion));
     }
 
     private void incrementQuestion() {
@@ -170,23 +151,19 @@ public class UIController extends Application {
         populateQuestion();
     }
 
-    private void parseForSentimentAnalysis() throws UnirestException {
-        //responseList = sentimentAnalysisParser.createResponseObjects(inputMap);
-    }
-
     private void populateQuestion() {
         questionLabel.setText(questions.getQuestion(currentQuestion));
     }
 
     private void populateTextField() {
-        inputTextField.setText(inputMap.get(currentQuestion));
+        inputTextField.setText(inputMap.getInputMap().get(currentQuestion).getResponse());
     }
 
     private void removeResponse() {
-        inputMap.remove(currentQuestion);
+        inputMap.removeInput(currentQuestion);
     }
 
     private void displayResult() {
-        resultLabel.setText("SUCCESS");
+        resultLabel.setText("Your race: " + raceResult + "\nYour class: " + classResult);
     }
 }
