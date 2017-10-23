@@ -2,6 +2,9 @@ package edu.bsu.cs222.model;
 
 import java.io.*;
 
+//Suppress warnings. We do not want to do it in the way that they recommend.
+//It hinders readability and the principles of clean code
+@SuppressWarnings({"ConstantConditions", "StringConcatenationInLoop"})
 public class ContentCreator {
 
     public Response createResponse(String response) {

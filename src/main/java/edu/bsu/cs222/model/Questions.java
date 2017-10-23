@@ -11,16 +11,16 @@ public class Questions {
     }
 
     private void populateQuestions() {
-        questionsMap.put(1, "How do you fight?");
-        questionsMap.put(2, "What weapons, if any, do you use?");
-        questionsMap.put(3, "How did you learn to fight?");
-        questionsMap.put(4, "What armor, if any, do you wear?");
-        questionsMap.put(5, "What do you think about religion?");
-        questionsMap.put(6, "Where do you come from?");
-        questionsMap.put(7, "How tall are you?");
-        questionsMap.put(8, "Is your family magically inclined?");
-        questionsMap.put(9, "How old are you?");
-        questionsMap.put(10, "What is your hair color?");
+        questionsMap.put(1, "What weapons do you use in a fight?");
+        questionsMap.put(2, "What kind of magic do you use?\n");
+        questionsMap.put(3, "How do you fight?");
+        questionsMap.put(4, "Describe how a typical battle that you are involved in would play out.");
+        questionsMap.put(5, "What object has the most importance to you?");
+        questionsMap.put(6, "How does your family make a living?");
+        questionsMap.put(7, "Where does your family live?");
+        questionsMap.put(8, "What is your heritage?");
+        questionsMap.put(9, "Describe your personality.");
+        questionsMap.put(10, "Describe your ideal retirement from adventuring.");
     }
 
     public String getQuestion(int key) {

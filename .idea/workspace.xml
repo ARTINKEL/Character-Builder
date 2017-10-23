@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="246033e6-5316-4904-ad71-c36844e676fa" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/questions.txt" afterPath="$PROJECT_DIR$/src/test/resources/questions.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentSplitter.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentSplitter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentCreator.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Questions.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Questions.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,6 +21,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
               <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Questions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Questions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,12 +119,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/questions.txt" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Response.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Questions.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ErrorHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/InputMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentSplitter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Questions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentCreator.java" />
       </list>
     </option>
   </component>
@@ -551,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508792073242</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Resolved some compiler warnings">
+      <created>1508792738985</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1508792738985</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -687,7 +703,8 @@
     <MESSAGE value="Clean code overhaul. Reimplementation of Mapper class." />
     <MESSAGE value="Added test cases. Reformatted text files for better parsing." />
     <MESSAGE value="Cleaned up spacing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up spacing" />
+    <MESSAGE value="Resolved some compiler warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolved some compiler warnings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -992,14 +1009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Questions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Response.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1034,19 +1043,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/questions.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Questions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="57" lean-forward="true" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+          <folding>
+            <element signature="e#184#254#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
