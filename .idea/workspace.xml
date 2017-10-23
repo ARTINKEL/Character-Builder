@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="246033e6-5316-4904-ad71-c36844e676fa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/questions.txt" afterPath="$PROJECT_DIR$/src/test/resources/questions.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="UIController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+            <state relative-caret-position="380">
+              <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -113,11 +112,11 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ErrorHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/InputMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentSplitter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Questions.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentCreator.java" />
         <option value="$PROJECT_DIR$/src/test/resources/questions.txt" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
       </list>
     </option>
   </component>
@@ -567,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508793088475</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Actually resolved all compiler warnings. For real this time.">
+      <created>1508793635281</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1508793635281</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -705,7 +711,8 @@
     <MESSAGE value="Cleaned up spacing" />
     <MESSAGE value="Resolved some compiler warnings" />
     <MESSAGE value="Changed questions to encourage better user input.&#10;This improved user input will help the mapper do its job better.&#10;Fixed all compiler warnings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed questions to encourage better user input.&#10;This improved user input will help the mapper do its job better.&#10;Fixed all compiler warnings." />
+    <MESSAGE value="Actually resolved all compiler warnings. For real this time." />
+    <option name="LAST_COMMIT_MESSAGE" value="Actually resolved all compiler warnings. For real this time." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1074,8 +1081,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+        <state relative-caret-position="380">
+          <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
           <folding />
         </state>
       </provider>

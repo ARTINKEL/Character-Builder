@@ -8,7 +8,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.TextArea;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -27,7 +27,7 @@ public class UIController extends Application {
 
     private Questions questions = new Questions();
     private ErrorHandler errorHandler = new ErrorHandler();
-    private TextField inputTextField = new TextField();
+    private TextArea inputTextArea = new TextArea();
 
     private int currentQuestion = 1;
 
@@ -54,9 +54,11 @@ public class UIController extends Application {
         GridPane.setHalignment(questionLabel, HPos.CENTER);
         grid.add(questionLabel, 0, 2);
 
-        grid.add(inputTextField, 0, 3);
-        inputTextField.setPrefWidth(550);
-        inputTextField.setPrefHeight(100);
+        grid.add(inputTextArea, 0, 3);
+        inputTextArea.setPrefWidth(550);
+        inputTextArea.setPrefHeight(100);
+        inputTextArea.setPromptText("Enter Response Here.");
+        inputTextArea.setWrapText(true);
 
         GridPane.setHalignment(errorLabel, HPos.CENTER);
 
@@ -74,7 +76,7 @@ public class UIController extends Application {
         grid.add(resultLabel, 0, 8);
 
         nextButton.setOnAction(event -> {
-            if (inputTextField.getText().isEmpty()) {
+            if (inputTextArea.getText().isEmpty()) {
                 errorLabel.setText(errorHandler.returnError("blankField"));
                 return;
             } else {
@@ -108,7 +110,7 @@ public class UIController extends Application {
             }
         });
 
-        clearButton.setOnAction(event -> inputTextField.setText(""));
+        clearButton.setOnAction(event -> inputTextArea.setText(""));
 
         Scene scene = new Scene(grid, WIDTH, HEIGHT);
         primaryStage.setScene(scene);
@@ -116,9 +118,9 @@ public class UIController extends Application {
     }
 
     private void recordResponse() {
-        Response response = contentCreator.createResponse(inputTextField.getText());
+        Response response = contentCreator.createResponse(inputTextArea.getText());
         inputMap.addInput(currentQuestion, response);
-        inputTextField.setText("");
+        inputTextArea.setText("");
     }
 
     private void incrementQuestion() {
@@ -136,7 +138,7 @@ public class UIController extends Application {
     }
 
     private void populateTextField() {
-        inputTextField.setText(inputMap.getInputMap().get(currentQuestion).getResponse());
+        inputTextArea.setText(inputMap.getInputMap().get(currentQuestion).getResponse());
     }
 
     private void removeResponse() {
