@@ -75,6 +75,7 @@ public class UIController extends Application {
 
         grid.add(resultLabel, 0, 8);
 
+        /*
         nextButton.setOnAction(event -> {
             if (inputTextArea.getText().isEmpty()) {
                 errorLabel.setText(errorHandler.returnError("blankField"));
@@ -100,6 +101,7 @@ public class UIController extends Application {
             }
             backButton.setVisible(true);
         });
+        */
 
         backButton.setOnAction(event -> {
             decrementQuestion();
