@@ -15,8 +15,6 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 public class UIController extends Application {
 
     private final int WIDTH = 500;
@@ -39,7 +37,7 @@ public class UIController extends Application {
     private String classResult = "";
 
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Character Designer v0.1.0");
+        primaryStage.setTitle("Character Designer v0.2.0");
 
         GridPane grid = new GridPane();
         grid.setAlignment(Pos.TOP_CENTER);
@@ -90,7 +88,7 @@ public class UIController extends Application {
                     }
                 } else {
                     try {
-                        Mapper mapper = new Mapper(inputMap);
+                        ListGenerator mapper = new ListGenerator(inputMap);
                         raceResult = mapper.calculateResult("race");
                         classResult = mapper.calculateResult("class");
                     } catch (IOException e) {

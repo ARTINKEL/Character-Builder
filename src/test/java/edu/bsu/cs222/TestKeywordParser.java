@@ -1,6 +1,8 @@
 package edu.bsu.cs222;
 
 import com.mashape.unirest.http.exceptions.UnirestException;
+import edu.bsu.cs222.model.Keyword;
+import edu.bsu.cs222.model.KeywordList;
 import edu.bsu.cs222.model.KeywordParser;
 import org.junit.Assert;
 import org.junit.Test;
@@ -14,13 +16,13 @@ public class TestKeywordParser {
         KeywordParser keywordParser = new KeywordParser();
         String text = "Test text.";
 
-        ArrayList<String> result = keywordParser.extractKeywords(text);
+        KeywordList result = keywordParser.extractKeywords(text);
 
-        ArrayList<String> expected = new ArrayList<>();
-        expected.add("test");
-        expected.add("text");
+        ArrayList<Keyword> expected = new ArrayList<>();
+        expected.add( new Keyword("test"));
+        expected.add( new Keyword("text"));
 
-        Assert.assertEquals(result, expected);
+        Assert.assertEquals(result.get(0).getKeyword(), expected.get(0).getKeyword());
     }
 
     @Test
@@ -28,18 +30,19 @@ public class TestKeywordParser {
         KeywordParser keywordParser = new KeywordParser();
         String text = "I wade through the enemies, hacking at them with my sword, screaming in rage.";
 
-        ArrayList<String> result = keywordParser.extractKeywords(text);
+        KeywordList result = keywordParser.extractKeywords(text);
 
-        ArrayList<String> expected = new ArrayList<>();
-        expected.add("rage");
-        expected.add("hacking");
-        expected.add("wade");
-        expected.add("enemies");
-        expected.add("sword");
+        ArrayList<Keyword> expected = new ArrayList<>();
+        expected.add( new Keyword("rage"));
+        expected.add( new Keyword("hacking"));
+        expected.add( new Keyword("wade"));
+        expected.add( new Keyword("enemies"));
+        expected.add( new Keyword("sword"));
 
-        Assert.assertEquals(result, expected);
+        Assert.assertEquals(result.get(0).getKeyword(), expected.get(0).getKeyword());
     }
 
+    // Learning test
     /*
     @Test
     public void testLearningKeyWordParser() throws UnirestException {
