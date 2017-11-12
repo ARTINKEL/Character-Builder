@@ -21,7 +21,6 @@ public class UIController extends Application {
     private final int HEIGHT = 400;
 
     private InputMap inputMap = new InputMap();
-    private ContentCreator contentCreator = new ContentCreator();
 
     private Questions questions = new Questions();
     private ErrorHandler errorHandler = new ErrorHandler();
@@ -73,7 +72,7 @@ public class UIController extends Application {
 
         grid.add(resultLabel, 0, 8);
 
-        /*
+
         nextButton.setOnAction(event -> {
             if (inputTextArea.getText().isEmpty()) {
                 errorLabel.setText(errorHandler.returnError("blankField"));
@@ -87,19 +86,15 @@ public class UIController extends Application {
                         nextButton.setText("Submit");
                     }
                 } else {
-                    try {
-                        ListGenerator mapper = new ListGenerator(inputMap);
-                        raceResult = mapper.calculateResult("race");
-                        classResult = mapper.calculateResult("class");
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                    Mapper mapper = new Mapper(inputMap);
+                    raceResult = mapper.calculateResult("race");
+                    classResult = mapper.calculateResult("class");
                     displayResult();
                 }
             }
             backButton.setVisible(true);
         });
-        */
+
 
         backButton.setOnAction(event -> {
             decrementQuestion();
@@ -117,7 +112,7 @@ public class UIController extends Application {
     }
 
     private void recordResponse() {
-        Response response = contentCreator.createResponse(inputTextArea.getText());
+        Response response = new Response(inputTextArea.getText());
         inputMap.addInput(currentQuestion, response);
         inputTextArea.setText("");
     }
