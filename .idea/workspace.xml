@@ -7,13 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="246033e6-5316-4904-ad71-c36844e676fa" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentSplitter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestContentCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestContentSplitter.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ListGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,6 +39,16 @@
                 <element signature="e#147#148#0" expanded="true" />
                 <element signature="e#174#175#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestMapper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KeywordDictionary.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KeywordDictionary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -192,7 +197,6 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentSplitter.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Questions.java" />
         <option value="$PROJECT_DIR$/src/test/resources/questions.txt" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java" />
         <option value="$PROJECT_DIR$/src/test/resources/test.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/Bard.txt" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Keyword.java" />
@@ -207,6 +211,7 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ContentCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java" />
       </list>
     </option>
   </component>
@@ -706,7 +711,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510280434618</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Delete unused classes left over from previous iteration&#10;Create stub implementation of Mapper constructor and methods">
+      <created>1510530828416</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1510530828416</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -833,7 +845,8 @@
     <MESSAGE value="Update TestKeywordParser&#10;Implement Keyword&#10;Implement KeywordList&#10;Implement KeywordDictionary" />
     <MESSAGE value="Update Test classes for KeywordParser and DataGenerator&#10;Implement DataGenerator method GenerateKeywordsList" />
     <MESSAGE value="Create methods to create KeywordDictionaries for the race and class files&#10;Create tests for both methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create methods to create KeywordDictionaries for the race and class files&#10;Create tests for both methods" />
+    <MESSAGE value="Delete unused classes left over from previous iteration&#10;Create stub implementation of Mapper constructor and methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete unused classes left over from previous iteration&#10;Create stub implementation of Mapper constructor and methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -842,7 +855,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponseParser.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/layout1.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/SentimentAnalysis.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/SentimentAnalysisParser.java" />
@@ -1118,25 +1130,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="e#147#148#0" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1181,6 +1174,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#147#148#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding />
         </state>
       </provider>
