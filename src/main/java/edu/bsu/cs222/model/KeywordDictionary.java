@@ -6,10 +6,6 @@ public class KeywordDictionary {
 
     private ArrayList<KeywordList> arrayOfFileKeywords = new ArrayList<>();
 
-    public KeywordDictionary() {
-
-    }
-
     public KeywordList getKeywordList(int i) {
         return arrayOfFileKeywords.get(i);
     }
