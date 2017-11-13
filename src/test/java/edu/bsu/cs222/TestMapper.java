@@ -10,12 +10,6 @@ import java.io.IOException;
 public class TestMapper {
 
     @Test
-    public void testMapper() throws IOException, UnirestException {
-        Mapper mapper = new Mapper();
-        Assert.assertNotNull(null);
-    }
-
-    @Test
     public void testCalculateClassResult_NotNull() throws IOException, UnirestException {
         Mapper mapper = new Mapper();
         String result = mapper.calculateClassResult();
