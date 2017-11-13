@@ -12,9 +12,9 @@ public class QuestionsMap {
 
     private void populateQuestions() {
         questionsMap.put(1, "What weapons do you use in a fight?");
-        questionsMap.put(2, "What kind of magic do you use?\n");
+        questionsMap.put(2, "What kind of magic do you use?");
         questionsMap.put(3, "How do you fight?");
-        questionsMap.put(4, "Describe how a typical battle that you are involved in would play out.");
+        questionsMap.put(4, "Describe how a typical battle that you are \n              involved in would play out.");
         questionsMap.put(5, "What object has the most importance to you?");
         questionsMap.put(6, "How does your family make a living?");
         questionsMap.put(7, "Where does your family live?");
