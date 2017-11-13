@@ -23,4 +23,13 @@ public class TestStatGenerator {
         int expectedStrength = 15;
         Assert.assertEquals(expectedStrength, (int) actual.get("Dexterity"));
     }
+
+    @Test
+    public void testApplyRacialBonus() {
+        StatGenerator statGenerator = new StatGenerator();
+        HashMap<String, Integer> standardArray = statGenerator.generateStandardArray("Warlock");
+        HashMap<String, Integer> actual = statGenerator.applyRacialBonus(standardArray, "Tiefling");
+        int expectedCharisma = 17;
+        Assert.assertEquals(expectedCharisma, (int) actual.get("Charisma"));
+    }
 }

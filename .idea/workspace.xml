@@ -7,10 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="246033e6-5316-4904-ad71-c36844e676fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/StatGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestStatGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestSentimentAnalysis.java" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestSentimentAnalysis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/StatGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/StatGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestStatGenerator.java" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestStatGenerator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,21 +31,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatGenerator.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StatGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/StatGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2140">
-              <caret line="107" column="20" lean-forward="true" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
+            <state relative-caret-position="1252">
+              <caret line="168" column="1" lean-forward="false" selection-start-line="168" selection-start-column="1" selection-end-line="168" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestStatGenerator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestStatGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestStatGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="560">
+              <caret line="32" column="76" lean-forward="false" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -787,13 +786,17 @@
       <option name="project" value="LOCAL" />
       <updated>1510607126170</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Create StatGenerator and TestStatGenerator&#10;Implement 2 unit tests and generateStandardArray functionality">
+      <created>1510608676735</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1510608676735</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSentimentAnalysis_testGetSentiment - 2017.11.13 at 15h 58m 48s.xml">
-      <configuration name="TestSentimentAnalysis.testGetSentiment" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestSentimentAnalysis_testGetSentiment - 2017.11.13 at 15h 59m 12s.xml">
       <configuration name="TestSentimentAnalysis.testGetSentiment" configurationId="JUnit" />
     </history-entry>
@@ -813,6 +816,9 @@
       <configuration name="TestStatGenerator" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestStatGenerator - 2017.11.13 at 16h 30m 34s.xml">
+      <configuration name="TestStatGenerator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStatGenerator - 2017.11.13 at 16h 46m 44s.xml">
       <configuration name="TestStatGenerator" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestStatGenerator_testGenerateStandardArray - 2017.11.13 at 16h 28m 22s.xml">
@@ -895,7 +901,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed way the mapper prioritizes in the event of a tie" />
     <MESSAGE value="Changed version number" />
     <MESSAGE value="Create TestKeywordParser test class&#10;Create KeywordParser class&#10;Implement KeywordParser from Cortical.io API&#10;Reformat Mapper for use with the API" />
     <MESSAGE value="Update TestKeywordParser&#10;Implement Keyword&#10;Implement KeywordList&#10;Implement KeywordDictionary" />
@@ -920,7 +925,8 @@
     <MESSAGE value="Implemented default value tests for Mapper" />
     <MESSAGE value="Write test for GetSentiment method of SentimentAnalysis" />
     <MESSAGE value="Implement GetSentiment with helper methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement GetSentiment with helper methods" />
+    <MESSAGE value="Create StatGenerator and TestStatGenerator&#10;Implement 2 unit tests and generateStandardArray functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create StatGenerator and TestStatGenerator&#10;Implement 2 unit tests and generateStandardArray functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1274,18 +1280,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/StatGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestStatGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2140">
-          <caret line="107" column="20" lean-forward="true" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
+        <state relative-caret-position="560">
+          <caret line="32" column="76" lean-forward="false" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestStatGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/StatGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="1252">
+          <caret line="168" column="1" lean-forward="false" selection-start-line="168" selection-start-column="1" selection-end-line="168" selection-end-column="1" />
           <folding />
         </state>
       </provider>
