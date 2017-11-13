@@ -12,10 +12,8 @@ public class ResponseProcessor {
 
         KeywordDictionary classResponses = new KeywordDictionary();
 
-        HashMap<Integer, Response> map = inputMap;
-
         for (int i = 1; i < 6; i++) {
-            KeywordList keywordList = keywordExtractor.extractKeywords(map.get(i).getResponse());
+            KeywordList keywordList = keywordExtractor.extractKeywords(inputMap.get(i).getResponse());
             classResponses.add(keywordList);
         }
         return classResponses;
@@ -24,10 +22,8 @@ public class ResponseProcessor {
     public KeywordDictionary processRaceResponseMap(HashMap<Integer, Response> inputMap) throws UnirestException {
         KeywordDictionary raceResponses = new KeywordDictionary();
 
-        HashMap<Integer, Response> map = inputMap;
-
         for (int i = 6; i < 11; i++) {
-            KeywordList keywordList = keywordExtractor.extractKeywords(map.get(i).getResponse());
+            KeywordList keywordList = keywordExtractor.extractKeywords(inputMap.get(i).getResponse());
             raceResponses.add(keywordList);
         }
         return raceResponses;

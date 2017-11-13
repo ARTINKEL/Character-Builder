@@ -6,29 +6,30 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 public class TestMapper {
 
-    private InputMap getSampleInputMap() {
-        InputMap inputMap = new InputMap();
+    private HashMap<Integer, Response> getSampleInputMap() {
+        HashMap<Integer, Response> inputMap = new HashMap<>();
 
-        inputMap.addInput(1, new Response("Sword"));
-        inputMap.addInput(2, new Response("Sword"));
-        inputMap.addInput(3, new Response("Sword"));
-        inputMap.addInput(4, new Response("Sword"));
-        inputMap.addInput(5, new Response("Sword"));
-        inputMap.addInput(6, new Response("Sword"));
-        inputMap.addInput(7, new Response("Sword"));
-        inputMap.addInput(8, new Response("Sword"));
-        inputMap.addInput(9, new Response("Sword"));
-        inputMap.addInput(10, new Response("Sword"));
+        inputMap.put(1, new Response("Sword"));
+        inputMap.put(2, new Response("Sword"));
+        inputMap.put(3, new Response("Sword"));
+        inputMap.put(4, new Response("Sword"));
+        inputMap.put(5, new Response("Sword"));
+        inputMap.put(6, new Response("Sword"));
+        inputMap.put(7, new Response("Sword"));
+        inputMap.put(8, new Response("Sword"));
+        inputMap.put(9, new Response("Sword"));
+        inputMap.put(10, new Response("Sword"));
 
         return inputMap;
     }
 
     @Test
     public void testCalculateClassResult_NotNull() throws IOException, UnirestException {
-        InputMap inputMap = getSampleInputMap();
+        HashMap<Integer, Response> inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
         String result = mapper.calculateClassResult();
         Assert.assertNotNull(result);
@@ -36,7 +37,7 @@ public class TestMapper {
 
     @Test
     public void testCompare() throws IOException, UnirestException {
-        InputMap inputMap = getSampleInputMap();
+        HashMap<Integer, Response> inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
 
         KeywordList list1 = new KeywordList();
@@ -54,7 +55,7 @@ public class TestMapper {
 
     @Test
     public void testCalculateClassResult_Accuracy() throws IOException, UnirestException {
-        InputMap inputMap = getSampleInputMap();
+        HashMap<Integer, Response> inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
         mapper.calculateClassResult();
         Assert.assertEquals("", mapper.calculateClassResult());
@@ -62,7 +63,7 @@ public class TestMapper {
 
     @Test
     public void testCalculateRaceResult_NotNull() throws IOException, UnirestException {
-        InputMap inputMap = getSampleInputMap();
+        HashMap<Integer, Response> inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
         String result = mapper.calculateRaceResult();
         Assert.assertNotNull(result);
@@ -70,7 +71,7 @@ public class TestMapper {
 
     @Test
     public void testCalculateRaceResult_Accuracy() throws IOException, UnirestException {
-        InputMap inputMap = getSampleInputMap();
+        HashMap<Integer, Response> inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
 
     }

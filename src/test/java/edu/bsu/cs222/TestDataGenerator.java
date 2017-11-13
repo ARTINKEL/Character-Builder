@@ -7,11 +7,7 @@ import edu.bsu.cs222.model.KeywordDictionary;
 import edu.bsu.cs222.model.KeywordList;
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
 
 public class TestDataGenerator {
 

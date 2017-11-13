@@ -5,24 +5,26 @@ import edu.bsu.cs222.model.*;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.HashMap;
+
 public class TestResponseProcessor {
 
     @Test
     public void testProcessClassResponseMap_NotNull() throws UnirestException {
         ResponseProcessor responseProcessor = new ResponseProcessor();
 
-        InputMap inputMap = new InputMap();
+        HashMap<Integer, Response> inputMap = new HashMap<>();
 
-        inputMap.addInput(1, new Response("Sword"));
-        inputMap.addInput(2, new Response("Sword"));
-        inputMap.addInput(3, new Response("Sword"));
-        inputMap.addInput(4, new Response("Sword"));
-        inputMap.addInput(5, new Response("Sword"));
-        inputMap.addInput(6, new Response("Sword"));
-        inputMap.addInput(7, new Response("Sword"));
-        inputMap.addInput(8, new Response("Sword"));
-        inputMap.addInput(9, new Response("Sword"));
-        inputMap.addInput(10, new Response("Sword"));
+        inputMap.put(1, new Response("Sword"));
+        inputMap.put(2, new Response("Sword"));
+        inputMap.put(3, new Response("Sword"));
+        inputMap.put(4, new Response("Sword"));
+        inputMap.put(5, new Response("Sword"));
+        inputMap.put(6, new Response("Sword"));
+        inputMap.put(7, new Response("Sword"));
+        inputMap.put(8, new Response("Sword"));
+        inputMap.put(9, new Response("Sword"));
+        inputMap.put(10, new Response("Sword"));
 
         KeywordDictionary responseKeywords = responseProcessor.processClassResponseMap(inputMap);
         Assert.assertNotNull(responseKeywords);
@@ -32,17 +34,17 @@ public class TestResponseProcessor {
     public void testProcessClassResponseMap_Accuracy() throws UnirestException {
         ResponseProcessor responseProcessor = new ResponseProcessor();
 
-        InputMap inputMap = new InputMap();
-        inputMap.addInput(1, new Response("Sword"));
-        inputMap.addInput(2, new Response("Sword"));
-        inputMap.addInput(3, new Response("Sword"));
-        inputMap.addInput(4, new Response("Sword"));
-        inputMap.addInput(5, new Response("Sword"));
-        inputMap.addInput(6, new Response("Sword"));
-        inputMap.addInput(7, new Response("Sword"));
-        inputMap.addInput(8, new Response("Sword"));
-        inputMap.addInput(9, new Response("Sword"));
-        inputMap.addInput(10, new Response("Sword"));
+        HashMap<Integer, Response> inputMap = new HashMap<>();
+        inputMap.put(1, new Response("Sword"));
+        inputMap.put(2, new Response("Sword"));
+        inputMap.put(3, new Response("Sword"));
+        inputMap.put(4, new Response("Sword"));
+        inputMap.put(5, new Response("Sword"));
+        inputMap.put(6, new Response("Sword"));
+        inputMap.put(7, new Response("Sword"));
+        inputMap.put(8, new Response("Sword"));
+        inputMap.put(9, new Response("Sword"));
+        inputMap.put(10, new Response("Sword"));
 
         KeywordDictionary expected = new KeywordDictionary();
         KeywordList list1 = new KeywordList();
@@ -63,17 +65,17 @@ public class TestResponseProcessor {
     public void testProcessRaceResponseMap_NotNull() throws UnirestException {
         ResponseProcessor responseProcessor = new ResponseProcessor();
 
-        InputMap inputMap = new InputMap();
-        inputMap.addInput(1, new Response("Sword"));
-        inputMap.addInput(2, new Response("Sword"));
-        inputMap.addInput(3, new Response("Sword"));
-        inputMap.addInput(4, new Response("Sword"));
-        inputMap.addInput(5, new Response("Sword"));
-        inputMap.addInput(6, new Response("Sword"));
-        inputMap.addInput(7, new Response("Sword"));
-        inputMap.addInput(8, new Response("Sword"));
-        inputMap.addInput(9, new Response("Sword"));
-        inputMap.addInput(10, new Response("Sword"));
+        HashMap<Integer, Response> inputMap = new HashMap<>();
+        inputMap.put(1, new Response("Sword"));
+        inputMap.put(2, new Response("Sword"));
+        inputMap.put(3, new Response("Sword"));
+        inputMap.put(4, new Response("Sword"));
+        inputMap.put(5, new Response("Sword"));
+        inputMap.put(6, new Response("Sword"));
+        inputMap.put(7, new Response("Sword"));
+        inputMap.put(8, new Response("Sword"));
+        inputMap.put(9, new Response("Sword"));
+        inputMap.put(10, new Response("Sword"));
 
         KeywordDictionary responseKeywords = responseProcessor.processRaceResponseMap(inputMap);
         Assert.assertNotNull(responseKeywords);
@@ -83,17 +85,17 @@ public class TestResponseProcessor {
     public void testProcessRaceResponseMap_Accuracy() throws UnirestException {
         ResponseProcessor responseProcessor = new ResponseProcessor();
 
-        InputMap inputMap = new InputMap();
-        inputMap.addInput(1, new Response("Sword"));
-        inputMap.addInput(2, new Response("Sword"));
-        inputMap.addInput(3, new Response("Sword"));
-        inputMap.addInput(4, new Response("Sword"));
-        inputMap.addInput(5, new Response("Sword"));
-        inputMap.addInput(6, new Response("Sword"));
-        inputMap.addInput(7, new Response("Sword"));
-        inputMap.addInput(8, new Response("Sword"));
-        inputMap.addInput(9, new Response("Sword"));
-        inputMap.addInput(10, new Response("Sword"));
+        HashMap<Integer, Response> inputMap = new HashMap<>();
+        inputMap.put(1, new Response("Sword"));
+        inputMap.put(2, new Response("Sword"));
+        inputMap.put(3, new Response("Sword"));
+        inputMap.put(4, new Response("Sword"));
+        inputMap.put(5, new Response("Sword"));
+        inputMap.put(6, new Response("Sword"));
+        inputMap.put(7, new Response("Sword"));
+        inputMap.put(8, new Response("Sword"));
+        inputMap.put(9, new Response("Sword"));
+        inputMap.put(10, new Response("Sword"));
 
         KeywordDictionary expected = new KeywordDictionary();
         KeywordList list1 = new KeywordList();
