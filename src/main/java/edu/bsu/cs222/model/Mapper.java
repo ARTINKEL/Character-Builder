@@ -6,7 +6,11 @@ public class Mapper {
 
     }
 
-    public String calculateResult(String race) {
+    public String calculateRaceResult() {
+        return null;
+    }
+
+    public String calculateClassResult() {
         return null;
     }
 }

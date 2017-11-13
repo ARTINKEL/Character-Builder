@@ -87,8 +87,8 @@ public class UIController extends Application {
                     }
                 } else {
                     Mapper mapper = new Mapper(inputMap);
-                    raceResult = mapper.calculateResult("race");
-                    classResult = mapper.calculateResult("class");
+                    raceResult = mapper.calculateClassResult();
+                    classResult = mapper.calculateRaceResult();
                     displayResult();
                 }
             }

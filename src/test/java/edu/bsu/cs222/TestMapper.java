@@ -5,7 +5,12 @@ import org.junit.Test;
 public class TestMapper {
 
     @Test
-    public void testCalculateResult() {
+    public void testCalculateClassResult() {
+
+    }
+
+    @Test
+    public void testCalculateRaceResult() {
 
     }
 }
