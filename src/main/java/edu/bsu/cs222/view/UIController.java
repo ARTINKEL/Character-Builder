@@ -20,13 +20,14 @@ import javafx.stage.Stage;
 
 import java.awt.event.ActionEvent;
 import java.io.IOException;
+import java.util.HashMap;
 
 public class UIController extends Application {
 
     private final int WIDTH = 500;
     private final int HEIGHT = 370;
 
-    private InputMap inputMap = new InputMap();
+    private HashMap<Integer, Response> inputMap = new HashMap<>();
 
     private QuestionsMap questionsMap = new QuestionsMap();
     private ErrorHandler errorHandler = new ErrorHandler();
@@ -89,7 +90,7 @@ public class UIController extends Application {
                 errorLabel.setText(null);
                 recordResponse();
                 if (finalQuestion()) {
-                    //calculateResult();
+                    calculateResult();
                     openResultWindow();
                 } else {
                     incrementQuestion();
@@ -133,11 +134,11 @@ public class UIController extends Application {
     private void recordResponse() {
         Response response = new Response(inputTextArea.getText().toLowerCase());
         if (getQuestionResponse().isEmpty()) {
-            inputMap.addInput(currentQuestion, response);
+            inputMap.put(currentQuestion, response);
         }
         else {
             removeResponse();
-            inputMap.addInput(currentQuestion, response);
+            inputMap.put(currentQuestion, response);
         }
         inputTextArea.setText("");
     }
@@ -161,7 +162,7 @@ public class UIController extends Application {
     }
 
     private String getQuestionResponse() {
-        Response response = inputMap.getInputMap().get(currentQuestion);
+        Response response = inputMap.get(currentQuestion);
         if (response != null) {
             return response.getResponse();
         }
@@ -171,27 +172,20 @@ public class UIController extends Application {
     }
 
     private void removeResponse() {
-        inputMap.removeInput(currentQuestion);
+        inputMap.remove(currentQuestion);
     }
 
     private void calculateResult() {
         Mapper mapper = null;
         try {
-            mapper = new Mapper();
+            mapper = new Mapper(inputMap);
         } catch (IOException | UnirestException e) {
             e.printStackTrace();
         }
-        /* UNCOMMENT WHEN MAPPER IS FIXED
-
-
-
         if (mapper != null) {
             raceResult = mapper.calculateRaceResult();
             classResult = mapper.calculateClassResult();
         }
-
-
-        */
     }
 
     private void openResultWindow() {

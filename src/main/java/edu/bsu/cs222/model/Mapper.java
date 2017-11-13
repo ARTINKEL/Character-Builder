@@ -4,11 +4,9 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Mapper {
-
-    private InputMap inputMap;
-
     private DataGenerator dataGenerator = new DataGenerator();
     private ResponseProcessor responseProcessor = new ResponseProcessor();
 
@@ -17,8 +15,7 @@ public class Mapper {
     private KeywordDictionary classResponseKeywords = new KeywordDictionary();
     private KeywordDictionary raceResponseKeywords = new KeywordDictionary();
 
-    public Mapper(InputMap inputMap) throws IOException, UnirestException {
-        this.inputMap = inputMap;
+    public Mapper(HashMap<Integer, Response> inputMap) throws IOException, UnirestException {
         populateFileDictionaries();
         classResponseKeywords = responseProcessor.processClassResponseMap(inputMap);
         raceResponseKeywords = responseProcessor.processRaceResponseMap(inputMap);
@@ -76,6 +73,7 @@ public class Mapper {
             }
             index++;
         }
-        return fileNamesList.get(finalIndex);
+        String fileName = fileNamesList.get(finalIndex);
+        return fileName.substring(0, fileName.length() - 4);
     }
 }
