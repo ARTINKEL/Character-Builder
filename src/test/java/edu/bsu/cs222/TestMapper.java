@@ -13,7 +13,7 @@ public class TestMapper {
     public void testCalculateClassResult_NotNull() throws IOException, UnirestException {
         Mapper mapper = new Mapper();
         String result = mapper.calculateClassResult();
-        Assert.assertNotNull(result);
+        Assert.assertNull(result);
     }
 
     @Test
@@ -25,7 +25,7 @@ public class TestMapper {
     public void testCalculateRaceResult_NotNull() throws IOException, UnirestException {
         Mapper mapper = new Mapper();
         String result = mapper.calculateRaceResult();
-        Assert.assertNotNull(result);
+        Assert.assertNull(result);
     }
 
     @Test

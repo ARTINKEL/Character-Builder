@@ -7,35 +7,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="246033e6-5316-4904-ad71-c36844e676fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Barbarian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Cleric.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Dragonborn.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Druid.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Dwarf.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Elf.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Fighter.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Gnome.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Half-Elf.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Half-Orc.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Halfling.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Human.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Monk.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Paladin.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Ranger.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Rogue.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Sorcerer.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Tiefling.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Warlock.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Wizard.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/ContentCreator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/ContentSplitter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/ErrorHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/InputMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/Questions.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/Response.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/view/UIController.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponseProcessor.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/ListGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestContentCreator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestContentSplitter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestListGenerator.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/DataGenerator.class" afterPath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/DataGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/KeywordDictionary.class" afterPath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/KeywordDictionary.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/KeywordList.class" afterPath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/KeywordList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestDataGenerator.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestDataGenerator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Bard.txt" afterPath="$PROJECT_DIR$/src/main/resources/Bard.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Barbarian.txt" afterPath="$PROJECT_DIR$/target/classes/Barbarian.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Bard.txt" afterPath="$PROJECT_DIR$/target/classes/Bard.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Cleric.txt" afterPath="$PROJECT_DIR$/target/classes/Cleric.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dragonborn.txt" afterPath="$PROJECT_DIR$/target/classes/Dragonborn.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Druid.txt" afterPath="$PROJECT_DIR$/target/classes/Druid.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dwarf.txt" afterPath="$PROJECT_DIR$/target/classes/Dwarf.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Elf.txt" afterPath="$PROJECT_DIR$/target/classes/Elf.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Fighter.txt" afterPath="$PROJECT_DIR$/target/classes/Fighter.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Gnome.txt" afterPath="$PROJECT_DIR$/target/classes/Gnome.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Half-Elf.txt" afterPath="$PROJECT_DIR$/target/classes/Half-Elf.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Half-Orc.txt" afterPath="$PROJECT_DIR$/target/classes/Half-Orc.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Halfling.txt" afterPath="$PROJECT_DIR$/target/classes/Halfling.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Human.txt" afterPath="$PROJECT_DIR$/target/classes/Human.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Monk.txt" afterPath="$PROJECT_DIR$/target/classes/Monk.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Paladin.txt" afterPath="$PROJECT_DIR$/target/classes/Paladin.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Ranger.txt" afterPath="$PROJECT_DIR$/target/classes/Ranger.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Rogue.txt" afterPath="$PROJECT_DIR$/target/classes/Rogue.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Sorcerer.txt" afterPath="$PROJECT_DIR$/target/classes/Sorcerer.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tiefling.txt" afterPath="$PROJECT_DIR$/target/classes/Tiefling.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Warlock.txt" afterPath="$PROJECT_DIR$/target/classes/Warlock.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Wizard.txt" afterPath="$PROJECT_DIR$/target/classes/Wizard.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,98 +55,83 @@
       <file leaf-file-name="Mapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+            <state relative-caret-position="400">
+              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+              <folding>
+                <element signature="e#713#714#0" expanded="true" />
+                <element signature="e#740#741#0" expanded="true" />
+                <element signature="e#784#785#0" expanded="true" />
+                <element signature="e#811#812#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dragonborn.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Dragonborn.txt">
+      <file leaf-file-name="InputMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/InputMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="2361" lean-forward="false" selection-start-line="0" selection-start-column="2361" selection-end-line="0" selection-end-column="2361" />
+            <state relative-caret-position="260">
+              <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dwarf.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Dwarf.txt">
+      <file leaf-file-name="UIController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ranger.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Ranger.txt">
+      <file leaf-file-name="KeywordParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="372" lean-forward="false" selection-start-line="0" selection-start-column="372" selection-end-line="0" selection-end-column="372" />
+            <state relative-caret-position="260">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rogue.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Rogue.txt">
+      <file leaf-file-name="DataGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/DataGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="80">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tiefling.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Tiefling.txt">
+      <file leaf-file-name="ResponseProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="80">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bard.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Bard.txt">
+      <file leaf-file-name="TestResponseProcessor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponseProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="793" lean-forward="false" selection-start-line="0" selection-start-column="793" selection-end-line="0" selection-end-column="793" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KeywordDictionary.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordDictionary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ErrorHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ErrorHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Keyword.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Keyword.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="160">
+              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -186,8 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/SentimentAnalysis.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponseParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/SentimentAnalysisParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/layout1.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/layout.fxml" />
@@ -218,7 +206,6 @@
         <option value="$PROJECT_DIR$/src/test/resources/questions.txt" />
         <option value="$PROJECT_DIR$/src/test/resources/test.txt" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Keyword.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestListGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/DataGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestDataGenerator.java" />
@@ -227,8 +214,6 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordDictionary.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestKeywordParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Ranger.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/Paladin.txt" />
@@ -237,6 +222,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/Dragonborn.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/Bard.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/Barbarian.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponseProcessor.java" />
       </list>
     </option>
   </component>
@@ -270,42 +260,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Character-Designer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Character-Designer" type="462c0819:PsiDirectoryNode" />
+              <item name="CharacterDesigner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CharacterDesigner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Character-Designer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Character-Designer" type="462c0819:PsiDirectoryNode" />
+              <item name="CharacterDesigner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CharacterDesigner" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Character-Designer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Character-Designer" type="462c0819:PsiDirectoryNode" />
+              <item name="CharacterDesigner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CharacterDesigner" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Character-Designer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Character-Designer" type="462c0819:PsiDirectoryNode" />
+              <item name="CharacterDesigner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CharacterDesigner" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Character-Designer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Character-Designer" type="462c0819:PsiDirectoryNode" />
+              <item name="CharacterDesigner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CharacterDesigner" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cs222" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Character-Designer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Character-Designer" type="462c0819:PsiDirectoryNode" />
+              <item name="CharacterDesigner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CharacterDesigner" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -313,29 +304,48 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Character-Designer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Character-Designer" type="462c0819:PsiDirectoryNode" />
+              <item name="CharacterDesigner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CharacterDesigner" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cs222" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Character-Designer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Character-Designer" type="462c0819:PsiDirectoryNode" />
+              <item name="CharacterDesigner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CharacterDesigner" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Character-Designer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="CharacterDesigner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CharacterDesigner" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CharacterDesigner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CharacterDesigner" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cs222" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CharacterDesigner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CharacterDesigner" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -372,27 +382,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestDataGenerator">
-    <configuration name="All in CharacterDesigner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="CharacterDesigner" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
+  <component name="RunManager" selected="Application.UIController">
     <configuration name="TestDataGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -568,20 +558,45 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="edu.bsu.cs222 in CharacterDesigner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="edu.bsu.cs222.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CharacterDesigner" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.bsu.cs222" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.UIController" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.All in CharacterDesigner" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestKeywordParser" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestDataGenerator" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestDataGenerator.testGenerateClassKeywords" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestKeywordParser" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestDataGenerator" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestDataGenerator.testGenerateClassKeywords" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.edu.bsu.cs222 in CharacterDesigner" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestDataGenerator" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestDataGenerator.testGenerateClassKeywords" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestKeywordParser" />
-        <item index="3" class="java.lang.String" itemvalue="Application.UIController" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.All in CharacterDesigner" />
+        <item index="0" class="java.lang.String" itemvalue="Application.UIController" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.edu.bsu.cs222 in CharacterDesigner" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestDataGenerator" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestDataGenerator.testGenerateClassKeywords" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestKeywordParser" />
       </list>
     </recent_temporary>
   </component>
@@ -771,9 +786,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDataGenerator - 2017.11.09 at 21h 14m 01s.xml">
-      <configuration name="TestDataGenerator" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestDataGenerator - 2017.11.09 at 21h 15m 35s.xml">
       <configuration name="TestDataGenerator" configurationId="JUnit" />
     </history-entry>
@@ -801,6 +813,9 @@
     <history-entry file="TestKeywordParser - 2017.11.09 at 19h 46m 57s.xml">
       <configuration name="TestKeywordParser" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="edu_bsu_cs222_in_CharacterDesigner - 2017.11.12 at 20h 14m 38s.xml">
+      <configuration name="edu.bsu.cs222 in CharacterDesigner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -812,22 +827,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1232" height="707" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26131222" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18403362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17669173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -835,12 +851,31 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39932126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39932126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26131222" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18403362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -909,8 +944,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/layout1.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/SentimentAnalysis.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/SentimentAnalysisParser.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/layout.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseParser.java" />
@@ -956,36 +989,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestContentSplitter.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestKeywordParser.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestDataGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/QuestionsMap.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestListGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/InputMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="90" column="21" lean-forward="false" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
-          <folding>
-            <marker date="1510534301000" expanded="false" signature="4560:4566" ph=" }" />
-            <marker date="1510534301000" expanded="true" signature="4605:4702" ph="{...}" />
-            <marker date="1510534301000" expanded="false" signature="4737:4748" ph=" { " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Sorcerer.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,7 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1222" lean-forward="false" selection-start-line="0" selection-start-column="1222" selection-end-line="0" selection-end-column="1222" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,7 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,7 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="101" lean-forward="false" selection-start-line="0" selection-start-column="101" selection-end-line="0" selection-end-column="101" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,7 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="2221" lean-forward="false" selection-start-line="0" selection-start-column="2221" selection-end-line="0" selection-end-column="2221" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,7 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,7 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1073,7 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,7 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,7 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,7 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1023" lean-forward="false" selection-start-line="0" selection-start-column="1023" selection-end-line="0" selection-end-column="1023" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1105,14 +1100,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/DataGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1141,19 +1128,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Bard.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="793" lean-forward="false" selection-start-line="0" selection-start-column="793" selection-end-line="0" selection-end-column="793" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1161,7 +1139,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="2361" lean-forward="false" selection-start-line="0" selection-start-column="2361" selection-end-line="0" selection-end-column="2361" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1169,7 +1146,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1177,7 +1153,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="372" lean-forward="false" selection-start-line="0" selection-start-column="372" selection-end-line="0" selection-end-column="372" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1185,7 +1160,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1193,6 +1167,82 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestDataGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/InputMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/DataGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponseProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding />
         </state>
       </provider>

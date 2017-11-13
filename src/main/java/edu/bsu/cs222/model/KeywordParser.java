@@ -18,7 +18,7 @@ public class KeywordParser {
                 .header("api-key: 84d21ef0-c509-11e7-9586-f796ac0731fb", "Content-Type: application/json")
                 .body(text)
                 .asJson();
-        return convertJsonToKeywordList( parseJson(response.getRawBody()));
+        return convertJsonToKeywordList(parseJson(response.getRawBody()));
     }
 
     private JsonElement parseJson(InputStream response) {
