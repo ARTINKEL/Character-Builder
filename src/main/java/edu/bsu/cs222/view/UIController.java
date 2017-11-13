@@ -1,5 +1,6 @@
 package edu.bsu.cs222.view;
 
+import com.mashape.unirest.http.exceptions.UnirestException;
 import edu.bsu.cs222.model.*;
 import javafx.application.Application;
 import javafx.geometry.HPos;
@@ -14,6 +15,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class UIController extends Application {
 
@@ -86,9 +89,16 @@ public class UIController extends Application {
                         nextButton.setText("Submit");
                     }
                 } else {
-                    Mapper mapper = new Mapper();
-                    raceResult = mapper.calculateClassResult();
-                    classResult = mapper.calculateRaceResult();
+                    Mapper mapper = null;
+                    try {
+                        mapper = new Mapper();
+                    } catch (IOException | UnirestException e) {
+                        e.printStackTrace();
+                    }
+                    if (mapper != null) {
+                        raceResult = mapper.calculateClassResult();
+                        classResult = mapper.calculateRaceResult();
+                    }
                     displayResult();
                 }
             }
