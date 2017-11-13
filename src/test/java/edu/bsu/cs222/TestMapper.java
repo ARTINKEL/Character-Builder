@@ -57,8 +57,9 @@ public class TestMapper {
     public void testCalculateClassResult_Accuracy() throws IOException, UnirestException {
         HashMap<Integer, Response> inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
-        mapper.calculateClassResult();
-        Assert.assertEquals("", mapper.calculateClassResult());
+        //Expected here is Bard because that is the default result if no user input is collected
+        String expected = "Bard";
+        Assert.assertEquals(expected, mapper.calculateClassResult());
     }
 
     @Test
@@ -73,6 +74,8 @@ public class TestMapper {
     public void testCalculateRaceResult_Accuracy() throws IOException, UnirestException {
         HashMap<Integer, Response> inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
-
+        //Expected is Elf because that is the default value for Race if there is no user input
+        String expected = "Elf";
+        Assert.assertEquals(expected, mapper.calculateRaceResult());
     }
 }
