@@ -14,7 +14,7 @@ public class ResponseProcessor {
 
         HashMap<Integer, Response> map = inputMap.getInputMap();
 
-        for (int i = 0; i < 6; i++) {
+        for (int i = 1; i < 6; i++) {
             KeywordList keywordList = keywordParser.extractKeywords(map.get(i).getResponse());
             classResponses.add(keywordList);
         }
