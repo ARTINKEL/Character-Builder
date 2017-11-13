@@ -133,7 +133,7 @@ public class UIController extends Application {
     }
 
     private void recordResponse() {
-        Response response = new Response(inputTextArea.getText());
+        Response response = new Response(inputTextArea.getText().toLowerCase());
         if (getQuestionResponse().isEmpty()) {
             inputMap.addInput(currentQuestion, response);
         } else {

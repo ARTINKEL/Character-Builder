@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class DataGenerator {
 
-    private ArrayList<String> raceFileNamesList = new ArrayList<String>() {
+    public ArrayList<String> raceFileNamesList = new ArrayList<String>() {
         {
             add("Elf.txt");
             add("Dwarf.txt");
@@ -21,7 +21,7 @@ public class DataGenerator {
         }
     };
 
-    private ArrayList<String> classFileNamesList = new ArrayList<String>() {
+    public ArrayList<String> classFileNamesList = new ArrayList<String>() {
         {
             add("Barbarian.txt");
             add("Bard.txt");
@@ -58,7 +58,7 @@ public class DataGenerator {
 
     public KeywordList generateKeywordsList(String filename) throws IOException, UnirestException {
         KeywordExtractor keywordExtractor = new KeywordExtractor();
-        String content = readFile(filename);
+        String content = readFile(filename).toLowerCase();
         return keywordExtractor.extractKeywords(content);
     }
 

@@ -13,4 +13,6 @@ public class KeywordList {
     public Keyword get(int i) {
         return keywordList.get(i);
     }
+
+    public int size() { return keywordList.size(); }
 }

@@ -1,9 +1,7 @@
 package edu.bsu.cs222;
 
 import com.mashape.unirest.http.exceptions.UnirestException;
-import edu.bsu.cs222.model.InputMap;
-import edu.bsu.cs222.model.Mapper;
-import edu.bsu.cs222.model.Response;
+import edu.bsu.cs222.model.*;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -41,14 +39,25 @@ public class TestMapper {
         InputMap inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
 
+        KeywordList list1 = new KeywordList();
+        list1.add(new Keyword("sword"));
+        list1.add(new Keyword("fire"));
 
+        KeywordList list2 = new KeywordList();
+        list2.add(new Keyword("sword"));
+        list2.add(new Keyword("fire"));
+
+        int actual = mapper.compareKeywords(list1, list2);
+        int expected = 2;
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testCalculateClassResult_Accuracy() throws IOException, UnirestException {
         InputMap inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
-
+        mapper.calculateClassResult();
+        Assert.assertEquals("", mapper.calculateClassResult());
     }
 
     @Test
@@ -63,7 +72,6 @@ public class TestMapper {
     public void testCalculateRaceResult_Accuracy() throws IOException, UnirestException {
         InputMap inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
-
 
     }
 }

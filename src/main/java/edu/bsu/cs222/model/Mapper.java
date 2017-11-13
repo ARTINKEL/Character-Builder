@@ -3,17 +3,25 @@ package edu.bsu.cs222.model;
 import com.mashape.unirest.http.exceptions.UnirestException;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Mapper {
 
     private InputMap inputMap;
+
     private DataGenerator dataGenerator = new DataGenerator();
+    private ResponseProcessor responseProcessor = new ResponseProcessor();
+
     private KeywordDictionary classFileKeywords = new KeywordDictionary();
     private KeywordDictionary raceFileKeywords = new KeywordDictionary();
+    private KeywordDictionary classResponseKeywords = new KeywordDictionary();
+    private KeywordDictionary raceResponseKeywords = new KeywordDictionary();
 
     public Mapper(InputMap inputMap) throws IOException, UnirestException {
         this.inputMap = inputMap;
         populateFileDictionaries();
+        classResponseKeywords = responseProcessor.processClassResponseMap(inputMap);
+        raceResponseKeywords = responseProcessor.processRaceResponseMap(inputMap);
     }
 
     private void populateFileDictionaries() throws IOException, UnirestException {
@@ -21,11 +29,53 @@ public class Mapper {
         raceFileKeywords = dataGenerator.processRaceFiles();
     }
 
+    public int compareKeywords(KeywordList fileKeywords, KeywordList responseKeywords) {
+        int occurrences = 0;
+        for (int i = 0; i < responseKeywords.size(); i++) {
+            for (int j = 0; j < fileKeywords.size(); j++) {
+                String responseKeyword = responseKeywords.get(i).getKeyword();
+                String fileKeyword = fileKeywords.get(j).getKeyword();
+                if (fileKeyword.contains(responseKeyword)) {
+                    occurrences++;
+                }
+            }
+        }
+        return occurrences;
+    }
+
     public String calculateRaceResult() {
-        return null;
+        ArrayList<Integer> occurrences = new ArrayList<>();
+
+        for (int i = 0; i < raceResponseKeywords.size(); i++) {
+            for (int j = 0; j < raceFileKeywords.size(); j++) {
+                occurrences.add(compareKeywords(raceFileKeywords.getKeywordList(j), raceResponseKeywords.getKeywordList(i)));
+            }
+        }
+        return calculateGreatestFrequency(occurrences, dataGenerator.raceFileNamesList);
     }
 
     public String calculateClassResult() {
-        return null;
+        ArrayList<Integer> occurrences = new ArrayList<>();
+
+        for (int i = 0; i < classResponseKeywords.size(); i++) {
+            for (int j = 0; j < classFileKeywords.size(); j++) {
+                occurrences.add(compareKeywords(classFileKeywords.getKeywordList(j), classResponseKeywords.getKeywordList(i)));
+            }
+        }
+        return calculateGreatestFrequency(occurrences, dataGenerator.classFileNamesList);
+    }
+
+    private String calculateGreatestFrequency(ArrayList<Integer> occurrences, ArrayList<String> fileNamesList) {
+        int largest = 0;
+        int index = 0;
+        int finalIndex = 0;
+        for (int number : occurrences) {
+            if (number > largest) {
+                largest = number;
+                finalIndex = index;
+            }
+            index++;
+        }
+        return fileNamesList.get(finalIndex);
     }
 }

@@ -13,4 +13,8 @@ public class KeywordDictionary {
     public void add(KeywordList list) {
         arrayOfFileKeywords.add(list);
     }
+
+    public int size() {
+        return arrayOfFileKeywords.size();
+    }
 }

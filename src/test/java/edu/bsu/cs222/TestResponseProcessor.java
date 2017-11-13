@@ -56,7 +56,7 @@ public class TestResponseProcessor {
 
         KeywordDictionary actual = responseProcessor.processClassResponseMap(inputMap);
 
-        Assert.assertEquals(actual.getKeywordList(0).get(0).getKeyword(), expected.getKeywordList(0).get(0).getKeyword());
+        Assert.assertEquals(expected.getKeywordList(0).get(0).getKeyword(), actual.getKeywordList(0).get(0).getKeyword());
     }
 
     @Test
@@ -107,6 +107,6 @@ public class TestResponseProcessor {
 
         KeywordDictionary actual = responseProcessor.processRaceResponseMap(inputMap);
 
-        Assert.assertEquals(actual.getKeywordList(0).get(0).getKeyword(), expected.getKeywordList(0).get(0).getKeyword());
+        Assert.assertEquals(expected.getKeywordList(0).get(0).getKeyword(), actual.getKeywordList(0).get(0).getKeyword());
     }
 }

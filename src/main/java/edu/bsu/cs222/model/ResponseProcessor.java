@@ -26,7 +26,7 @@ public class ResponseProcessor {
 
         HashMap<Integer, Response> map = inputMap.getInputMap();
 
-        for (int i = 6; i < 10; i++) {
+        for (int i = 6; i < 11; i++) {
             KeywordList keywordList = keywordExtractor.extractKeywords(map.get(i).getResponse());
             raceResponses.add(keywordList);
         }

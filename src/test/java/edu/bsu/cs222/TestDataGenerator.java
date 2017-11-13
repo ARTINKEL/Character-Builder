@@ -26,7 +26,7 @@ public class TestDataGenerator {
         expected.add( new Keyword("test"));
         expected.add( new Keyword("test"));
 
-        Assert.assertEquals(keywords.get(0).getKeyword(), expected.get(0).getKeyword());
+        Assert.assertEquals(expected.get(0).getKeyword(), keywords.get(0).getKeyword());
     }
 
     @Test
