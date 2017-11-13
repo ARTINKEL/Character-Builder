@@ -2,11 +2,11 @@ package edu.bsu.cs222.model;
 
 import java.util.HashMap;
 
-public class Questions {
+public class QuestionsMap {
 
     HashMap<Integer, String> questionsMap = new HashMap<>();
 
-    public Questions() {
+    public QuestionsMap() {
         populateQuestions();
     }
 

@@ -22,13 +22,13 @@ public class UIController extends Application {
 
     private InputMap inputMap = new InputMap();
 
-    private Questions questions = new Questions();
+    private QuestionsMap questionsMap = new QuestionsMap();
     private ErrorHandler errorHandler = new ErrorHandler();
     private TextArea inputTextArea = new TextArea();
 
     private int currentQuestion = 1;
 
-    private Label questionLabel = new Label(questions.getQuestion(currentQuestion));
+    private Label questionLabel = new Label(questionsMap.getQuestion(currentQuestion));
     private Label errorLabel = new Label();
     private Label resultLabel = new Label();
 
@@ -86,7 +86,7 @@ public class UIController extends Application {
                         nextButton.setText("Submit");
                     }
                 } else {
-                    Mapper mapper = new Mapper(inputMap);
+                    Mapper mapper = new Mapper();
                     raceResult = mapper.calculateClassResult();
                     classResult = mapper.calculateRaceResult();
                     displayResult();
@@ -128,7 +128,7 @@ public class UIController extends Application {
     }
 
     private void populateQuestion() {
-        questionLabel.setText(questions.getQuestion(currentQuestion));
+        questionLabel.setText(questionsMap.getQuestion(currentQuestion));
     }
 
     private void populateTextField() {
