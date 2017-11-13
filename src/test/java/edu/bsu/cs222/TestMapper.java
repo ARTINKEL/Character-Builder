@@ -54,7 +54,7 @@ public class TestMapper {
     }
 
     @Test
-    public void testCalculateClassResult_Accuracy() throws IOException, UnirestException {
+    public void testCalculateClassResult_Default() throws IOException, UnirestException {
         HashMap<Integer, Response> inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
         //Expected here is Bard because that is the default result if no user input is collected
@@ -71,7 +71,7 @@ public class TestMapper {
     }
 
     @Test
-    public void testCalculateRaceResult_Accuracy() throws IOException, UnirestException {
+    public void testCalculateRaceResult_Default() throws IOException, UnirestException {
         HashMap<Integer, Response> inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
         //Expected is Elf because that is the default value for Race if there is no user input
