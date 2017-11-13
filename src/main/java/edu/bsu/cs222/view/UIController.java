@@ -17,8 +17,9 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import java.io.IOException;
+
 import java.util.HashMap;
+import java.io.IOException;
 
 public class UIController extends Application {
 
@@ -36,6 +37,7 @@ public class UIController extends Application {
     private Label questionLabel = new Label(questionsMap.getQuestion(currentQuestion));
     private Label errorLabel = new Label();
     private Label resultLabel = new Label();
+    private Label helpLabel = new Label();
 
     private String raceResult = "";
     private String classResult = "";
@@ -70,6 +72,7 @@ public class UIController extends Application {
         Button nextButton = new Button("Next");
         Button backButton = new Button("Back");
         Button clearButton = new Button("Clear");
+        Button helpButton = new Button("Help");
         backButton.setVisible(false);
 
 
@@ -79,6 +82,7 @@ public class UIController extends Application {
         grid.add(nextButton, 0, 5);
         grid.add(clearButton, 0, 6);
         grid.add(backButton, 0, 7);
+        grid.add(helpButton, 0, 8);
 
 
         nextButton.setOnAction(event -> {
@@ -120,6 +124,7 @@ public class UIController extends Application {
         });
 
         clearButton.setOnAction(event -> inputTextArea.setText(""));
+        helpButton.setOnAction(event -> openHelpWindow());
         Scene scene = new Scene(grid, WIDTH, HEIGHT);
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -152,6 +157,7 @@ public class UIController extends Application {
     }
 
     private void populateQuestion() {
+        questionLabel.setWrapText(true);
         questionLabel.setText(questionsMap.getQuestion(currentQuestion));
     }
 
@@ -202,7 +208,28 @@ public class UIController extends Application {
         secondStage.show();
     }
 
+    private void openHelpWindow() {
+        displayHelp();
+        grid.add(helpLabel, 0, 2);
+
+        StackPane tertiaryLayout = new StackPane();
+        tertiaryLayout.getChildren().add(helpLabel);
+
+        Scene tertiaryScene = new Scene(tertiaryLayout, 300, 100);
+
+        Stage tertiaryStage = new Stage();
+        tertiaryStage.setTitle("Help");
+        tertiaryStage.setScene(tertiaryScene);
+
+        tertiaryStage.show();
+    }
+
     private void displayResult() {
+        resultLabel.setWrapText(true);
         resultLabel.setText("Your race: " + raceResult + "\nYour class: " + classResult);
+    }
+
+    private void displayHelp() {
+        helpLabel.setText("Don't use contraction's please\nResult will most likely take a minute to be calculated \nSorry fam.");
     }
 }
