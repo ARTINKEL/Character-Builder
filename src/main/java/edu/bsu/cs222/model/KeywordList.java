@@ -6,10 +6,6 @@ public class KeywordList {
 
     private ArrayList<Keyword> keywordList = new ArrayList<>();
 
-    public KeywordList() {
-
-    }
-
     public void add(Keyword keyword) {
         keywordList.add(keyword);
     }
