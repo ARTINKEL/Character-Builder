@@ -79,40 +79,34 @@ public class UIController extends Application {
         nextButton.setOnAction(event -> {
             if (inputTextArea.getText().isEmpty()) {
                 errorLabel.setText(errorHandler.returnError("blankField"));
-                return;
             } else {
                 errorLabel.setText(null);
                 recordResponse();
-                if (currentQuestion != 10) {
+                if (finalQuestion()) {
+                    calculateResult();
+                } else {
                     incrementQuestion();
-                    if (currentQuestion == 10) {
+                    if (!getQuestionResponse().isEmpty()) {
+                        populateTextField();
+                    }
+                    backButton.setVisible(true);
+                    if (finalQuestion()) {
                         nextButton.setText("Submit");
                     }
-                } else {
-                    Mapper mapper = null;
-                    try {
-                        mapper = new Mapper();
-                    } catch (IOException | UnirestException e) {
-                        e.printStackTrace();
-                    }
-                    if (mapper != null) {
-                        raceResult = mapper.calculateClassResult();
-                        classResult = mapper.calculateRaceResult();
-                    }
-                    displayResult();
                 }
             }
-            backButton.setVisible(true);
         });
 
-
         backButton.setOnAction(event -> {
+            if (!inputTextArea.getText().isEmpty()) {
+                recordResponse();
+            }
+            nextButton.setText("Next");
             decrementQuestion();
-            populateTextField();
-            removeResponse();
-            if (currentQuestion == 1) {
+            if (firstQuestion()) {
                 backButton.setVisible(false);
             }
+            populateTextField();
         });
 
         clearButton.setOnAction(event -> inputTextArea.setText(""));
@@ -121,15 +115,32 @@ public class UIController extends Application {
         primaryStage.show();
     }
 
-    private void recordResponse() {
-        Response response = new Response(inputTextArea.getText());
-        inputMap.addInput(currentQuestion, response);
-        inputTextArea.setText("");
+    private void incrementQuestion() {
+        if (currentQuestion != 10) {
+            currentQuestion++;
+            populateQuestion();
+        } else {
+            calculateResult();
+        }
     }
 
-    private void incrementQuestion() {
-        currentQuestion++;
-        populateQuestion();
+    private boolean finalQuestion() {
+        return (currentQuestion == 10);
+    }
+
+    private boolean firstQuestion() {
+        return (currentQuestion == 1);
+    }
+
+    private void recordResponse() {
+        Response response = new Response(inputTextArea.getText());
+        if (getQuestionResponse().isEmpty()) {
+            inputMap.addInput(currentQuestion, response);
+        } else {
+            removeResponse();
+            inputMap.addInput(currentQuestion, response);
+        }
+        inputTextArea.setText("");
     }
 
     private void decrementQuestion() {
@@ -141,8 +152,30 @@ public class UIController extends Application {
         questionLabel.setText(questionsMap.getQuestion(currentQuestion));
     }
 
-    private void populateTextField() {
-        inputTextArea.setText(inputMap.getInputMap().get(currentQuestion).getResponse());
+    private void populateTextField() { inputTextArea.setText(getQuestionResponse()); }
+
+    private String getQuestionResponse() {
+        Response response = inputMap.getInputMap().get(currentQuestion);
+        if (response != null) {
+            return response.getResponse();
+        }
+        else {
+            return "";
+        }
+    }
+
+    private void calculateResult() {
+        Mapper mapper = null;
+        try {
+            mapper = new Mapper();
+        } catch (IOException | UnirestException e) {
+            e.printStackTrace();
+        }
+        if (mapper != null) {
+            raceResult = mapper.calculateClassResult();
+            classResult = mapper.calculateRaceResult();
+        }
+        displayResult();
     }
 
     private void removeResponse() {
