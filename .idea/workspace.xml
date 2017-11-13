@@ -9,6 +9,26 @@
     <list default="true" id="246033e6-5316-4904-ad71-c36844e676fa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Barbarian.txt" afterPath="$PROJECT_DIR$/target/classes/Barbarian.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Bard.txt" afterPath="$PROJECT_DIR$/target/classes/Bard.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Cleric.txt" afterPath="$PROJECT_DIR$/target/classes/Cleric.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dragonborn.txt" afterPath="$PROJECT_DIR$/target/classes/Dragonborn.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Druid.txt" afterPath="$PROJECT_DIR$/target/classes/Druid.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dwarf.txt" afterPath="$PROJECT_DIR$/target/classes/Dwarf.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Elf.txt" afterPath="$PROJECT_DIR$/target/classes/Elf.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Fighter.txt" afterPath="$PROJECT_DIR$/target/classes/Fighter.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Gnome.txt" afterPath="$PROJECT_DIR$/target/classes/Gnome.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Half-Elf.txt" afterPath="$PROJECT_DIR$/target/classes/Half-Elf.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Half-Orc.txt" afterPath="$PROJECT_DIR$/target/classes/Half-Orc.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Halfling.txt" afterPath="$PROJECT_DIR$/target/classes/Halfling.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Human.txt" afterPath="$PROJECT_DIR$/target/classes/Human.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Monk.txt" afterPath="$PROJECT_DIR$/target/classes/Monk.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Paladin.txt" afterPath="$PROJECT_DIR$/target/classes/Paladin.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Ranger.txt" afterPath="$PROJECT_DIR$/target/classes/Ranger.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Rogue.txt" afterPath="$PROJECT_DIR$/target/classes/Rogue.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Sorcerer.txt" afterPath="$PROJECT_DIR$/target/classes/Sorcerer.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tiefling.txt" afterPath="$PROJECT_DIR$/target/classes/Tiefling.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Warlock.txt" afterPath="$PROJECT_DIR$/target/classes/Warlock.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +43,11 @@
       <file leaf-file-name="UIController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="251" column="1" lean-forward="false" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
+            <state relative-caret-position="460">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
-                <element signature="e#7918#7919#0" expanded="true" />
-                <element signature="e#8014#8015#0" expanded="true" />
+                <element signature="e#8117#8118#0" expanded="true" />
+                <element signature="e#8213#8214#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,8 +84,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="jacobknoll &lt;jcknoll@bsu.edu&gt;" />
         <option value="Austin Tinkel &lt;austin.tinkel@gmail.com&gt;" />
+        <option value="jacobknoll &lt;jcknoll@bsu.edu&gt;" />
         <option value="Nick Hoover &lt;hoover3330@gmail.com&gt;" />
       </list>
     </option>
@@ -764,7 +784,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510611433548</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Implemented StatGenerator in UIController">
+      <created>1510615345963</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1510615345963</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -820,7 +847,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26131222" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26131222" sideWeight="0.49785176" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26131222" sideWeight="0.49785176" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -892,7 +919,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed questions to encourage better user input.&#10;This improved user input will help the mapper do its job better.&#10;Fixed all compiler warnings." />
     <MESSAGE value="Actually resolved all compiler warnings. For real this time." />
     <MESSAGE value="Changed inputTextField to a text area to enable word wrapping and allowing for cleaner and more intuitive user input" />
     <MESSAGE value="Changed way the mapper prioritizes in the event of a tie" />
@@ -917,7 +943,8 @@
     <MESSAGE value="Call Mapper from UIController" />
     <MESSAGE value="Finish Mapper implementation&#10;Changed InputMap to just a hashmap" />
     <MESSAGE value="Merge branch 'master' of https://github.com/ARTINKEL/Character-Designer&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/ARTINKEL/Character-Designer&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="Implemented StatGenerator in UIController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented StatGenerator in UIController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1241,11 +1268,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="251" column="1" lean-forward="false" selection-start-line="251" selection-start-column="1" selection-end-line="251" selection-end-column="1" />
+        <state relative-caret-position="460">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="e#7918#7919#0" expanded="true" />
-            <element signature="e#8014#8015#0" expanded="true" />
+            <element signature="e#8117#8118#0" expanded="true" />
+            <element signature="e#8213#8214#0" expanded="true" />
           </folding>
         </state>
       </provider>

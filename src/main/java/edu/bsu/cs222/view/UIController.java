@@ -45,6 +45,7 @@ public class UIController extends Application {
     private String classResult = "";
 
     private GridPane grid = new GridPane();
+    private GridPane resultsGrid = new GridPane();
 
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Character Designer v0.2.0");
@@ -199,12 +200,12 @@ public class UIController extends Application {
 
     private void populateAbilityScoreText(HashMap<String, Integer> map) {
 
-        String result = map.get("Strength").toString() + "\n" +
-                        map.get("Dexterity").toString() + "\n" +
-                        map.get("Constitution").toString() + "\n" +
-                        map.get("Intelligence").toString() + "\n" +
-                        map.get("Wisdom").toString() + "\n" +
-                        map.get("Charisma").toString();
+        String result = "Strength: " + map.get("Strength").toString() + "\n" +
+                        "Dexterity: " + map.get("Dexterity").toString() + "\n" +
+                        "Constitution: " + map.get("Constitution").toString() + "\n" +
+                        "Intelligence: " + map.get("Intelligence").toString() + "\n" +
+                        "Wisdom: " + map.get("Wisdom").toString() + "\n" +
+                        "Charisma: " + map.get("Charisma").toString();
 
         abilityScoreLabel.setText(result);
     }
@@ -212,12 +213,13 @@ public class UIController extends Application {
     private void openResultWindow() {
         displayResult();
         grid.add(resultLabel, 0, 2);
-        grid.add(abilityScoreLabel, 0, 3);
 
         StackPane secondaryLayout = new StackPane();
-        secondaryLayout.getChildren().add(resultLabel);
+        secondaryLayout.getChildren().add(resultsGrid);
+        resultsGrid.add(resultLabel, 0, 1);
+        resultsGrid.add(abilityScoreLabel, 0, 2);
 
-        Scene secondScene = new Scene(secondaryLayout, 300, 100);
+        Scene secondScene = new Scene(secondaryLayout, 300, 175);
 
         Stage secondStage = new Stage();
         secondStage.setTitle("Your results");
