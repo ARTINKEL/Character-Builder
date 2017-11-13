@@ -212,24 +212,23 @@ public class UIController extends Application {
         displayHelp();
         grid.add(helpLabel, 0, 2);
 
-        StackPane tertiaryLayout = new StackPane();
-        tertiaryLayout.getChildren().add(helpLabel);
+        StackPane thirdLayout = new StackPane();
+        thirdLayout.getChildren().add(helpLabel);
 
-        Scene tertiaryScene = new Scene(tertiaryLayout, 300, 100);
+        Scene thirdScene = new Scene(thirdLayout, 300, 100);
 
-        Stage tertiaryStage = new Stage();
-        tertiaryStage.setTitle("Help");
-        tertiaryStage.setScene(tertiaryScene);
+        Stage thirdStage = new Stage();
+        thirdStage.setTitle("Help");
+        thirdStage.setScene(thirdScene);
 
-        tertiaryStage.show();
+        thirdStage.show();
     }
 
     private void displayResult() {
-        resultLabel.setWrapText(true);
         resultLabel.setText("Your race: " + raceResult + "\nYour class: " + classResult);
     }
 
     private void displayHelp() {
-        helpLabel.setText("Don't use contraction's please\nResult will most likely take a minute to be calculated \nSorry fam.");
+        helpLabel.setText("Don't use contraction's please\nResult will most likely take a minute to be calculated \nSorry fam.\n Use American English (honor vs honour or gray vs grey");
     }
 }
