@@ -3,6 +3,7 @@ package edu.bsu.cs222.view;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import edu.bsu.cs222.model.*;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -11,17 +12,19 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.awt.event.ActionEvent;
 import java.io.IOException;
 
 public class UIController extends Application {
 
     private final int WIDTH = 500;
-    private final int HEIGHT = 400;
+    private final int HEIGHT = 370;
 
     private InputMap inputMap = new InputMap();
 
@@ -38,10 +41,11 @@ public class UIController extends Application {
     private String raceResult = "";
     private String classResult = "";
 
+    private GridPane grid = new GridPane();
+
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Character Designer v0.2.0");
 
-        GridPane grid = new GridPane();
         grid.setAlignment(Pos.TOP_CENTER);
         grid.setHgap(10);
         grid.setVgap(10);
@@ -49,7 +53,7 @@ public class UIController extends Application {
 
         Text sceneTitle = new Text("Character Designer");
         GridPane.setHalignment(sceneTitle, HPos.CENTER);
-        sceneTitle.setFont(Font.font("Tahoma", FontWeight.BOLD, 20));
+        sceneTitle.setFont(Font.font("Herculanum", FontWeight.BOLD, 20));
         grid.add(sceneTitle, 0, 0, 1, 2);
         GridPane.setHalignment(questionLabel, HPos.CENTER);
         grid.add(questionLabel, 0, 2);
@@ -69,11 +73,13 @@ public class UIController extends Application {
         Button clearButton = new Button("Clear");
         backButton.setVisible(false);
 
-        grid.add(nextButton, 0, 5);
-        grid.add(backButton, 0, 7);
-        grid.add(clearButton, 0, 6);
 
-        grid.add(resultLabel, 0, 8);
+        primaryStage.setOnCloseRequest(e -> Platform.exit());
+
+
+        grid.add(nextButton, 0, 5);
+        grid.add(clearButton, 0, 6);
+        grid.add(backButton, 0, 7);
 
 
         nextButton.setOnAction(event -> {
@@ -83,7 +89,8 @@ public class UIController extends Application {
                 errorLabel.setText(null);
                 recordResponse();
                 if (finalQuestion()) {
-                    calculateResult();
+                    //calculateResult();
+                    openResultWindow();
                 } else {
                     incrementQuestion();
                     if (!getQuestionResponse().isEmpty()) {
@@ -91,11 +98,15 @@ public class UIController extends Application {
                     }
                     backButton.setVisible(true);
                     if (finalQuestion()) {
-                        nextButton.setText("Submit");
+                        nextButton.setText("Get Results");
                     }
+                    Label blankLabel = new Label("");
+                    StackPane placeholderLayout = new StackPane();
+                    placeholderLayout.getChildren().add(blankLabel);
                 }
             }
         });
+
 
         backButton.setOnAction(event -> {
             if (!inputTextArea.getText().isEmpty()) {
@@ -115,32 +126,25 @@ public class UIController extends Application {
         primaryStage.show();
     }
 
-    private void incrementQuestion() {
-        if (currentQuestion != 10) {
-            currentQuestion++;
-            populateQuestion();
-        } else {
-            calculateResult();
-        }
-    }
+    private boolean finalQuestion() { return (currentQuestion == 10); }
 
-    private boolean finalQuestion() {
-        return (currentQuestion == 10);
-    }
-
-    private boolean firstQuestion() {
-        return (currentQuestion == 1);
-    }
+    private boolean firstQuestion() { return (currentQuestion == 1); }
 
     private void recordResponse() {
-        Response response = new Response(inputTextArea.getText());
+        Response response = new Response(inputTextArea.getText().toLowerCase());
         if (getQuestionResponse().isEmpty()) {
             inputMap.addInput(currentQuestion, response);
-        } else {
+        }
+        else {
             removeResponse();
             inputMap.addInput(currentQuestion, response);
         }
         inputTextArea.setText("");
+    }
+
+    private void incrementQuestion() {
+        currentQuestion++;
+        populateQuestion();
     }
 
     private void decrementQuestion() {
@@ -152,7 +156,9 @@ public class UIController extends Application {
         questionLabel.setText(questionsMap.getQuestion(currentQuestion));
     }
 
-    private void populateTextField() { inputTextArea.setText(getQuestionResponse()); }
+    private void populateTextField() {
+        inputTextArea.setText(getQuestionResponse());
+    }
 
     private String getQuestionResponse() {
         Response response = inputMap.getInputMap().get(currentQuestion);
@@ -164,6 +170,10 @@ public class UIController extends Application {
         }
     }
 
+    private void removeResponse() {
+        inputMap.removeInput(currentQuestion);
+    }
+
     private void calculateResult() {
         Mapper mapper = null;
         try {
@@ -171,15 +181,33 @@ public class UIController extends Application {
         } catch (IOException | UnirestException e) {
             e.printStackTrace();
         }
+        /* UNCOMMENT WHEN MAPPER IS FIXED
+
+
+
         if (mapper != null) {
-            raceResult = mapper.calculateClassResult();
-            classResult = mapper.calculateRaceResult();
+            raceResult = mapper.calculateRaceResult();
+            classResult = mapper.calculateClassResult();
         }
-        displayResult();
+
+
+        */
     }
 
-    private void removeResponse() {
-        inputMap.removeInput(currentQuestion);
+    private void openResultWindow() {
+        displayResult();
+        grid.add(resultLabel, 0, 2);
+
+        StackPane secondaryLayout = new StackPane();
+        secondaryLayout.getChildren().add(resultLabel);
+
+        Scene secondScene = new Scene(secondaryLayout, 300, 100);
+
+        Stage secondStage = new Stage();
+        secondStage.setTitle("Your results");
+        secondStage.setScene(secondScene);
+
+        secondStage.show();
     }
 
     private void displayResult() {
