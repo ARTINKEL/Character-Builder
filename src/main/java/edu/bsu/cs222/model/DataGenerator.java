@@ -57,9 +57,9 @@ public class DataGenerator {
     }
 
     public KeywordList generateKeywordsList(String filename) throws IOException, UnirestException {
-        KeywordParser keywordParser = new KeywordParser();
+        KeywordExtractor keywordExtractor = new KeywordExtractor();
         String content = readFile(filename);
-        return keywordParser.extractKeywords(content);
+        return keywordExtractor.extractKeywords(content);
     }
 
     private String readFile(String filename) throws IOException {

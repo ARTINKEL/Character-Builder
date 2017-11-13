@@ -3,20 +3,20 @@ package edu.bsu.cs222;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import edu.bsu.cs222.model.Keyword;
 import edu.bsu.cs222.model.KeywordList;
-import edu.bsu.cs222.model.KeywordParser;
+import edu.bsu.cs222.model.KeywordExtractor;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
-public class TestKeywordParser {
+public class TestKeywordExtractor {
 
     @Test
     public void testExtractKeywords() throws UnirestException {
-        KeywordParser keywordParser = new KeywordParser();
+        KeywordExtractor keywordExtractor = new KeywordExtractor();
         String text = "Test text.";
 
-        KeywordList result = keywordParser.extractKeywords(text);
+        KeywordList result = keywordExtractor.extractKeywords(text);
 
         ArrayList<Keyword> expected = new ArrayList<>();
         expected.add( new Keyword("test"));
@@ -27,10 +27,10 @@ public class TestKeywordParser {
 
     @Test
     public void testExtractKeywords_DifferentData() throws UnirestException {
-        KeywordParser keywordParser = new KeywordParser();
+        KeywordExtractor keywordExtractor = new KeywordExtractor();
         String text = "I wade through the enemies, hacking at them with my sword, screaming in rage.";
 
-        KeywordList result = keywordParser.extractKeywords(text);
+        KeywordList result = keywordExtractor.extractKeywords(text);
 
         ArrayList<Keyword> expected = new ArrayList<>();
         expected.add( new Keyword("rage"));

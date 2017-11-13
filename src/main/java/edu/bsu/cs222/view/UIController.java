@@ -167,7 +167,7 @@ public class UIController extends Application {
     private void calculateResult() {
         Mapper mapper = null;
         try {
-            mapper = new Mapper();
+            mapper = new Mapper(inputMap);
         } catch (IOException | UnirestException e) {
             e.printStackTrace();
         }

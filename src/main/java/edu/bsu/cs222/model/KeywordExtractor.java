@@ -11,7 +11,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
-public class KeywordParser {
+public class KeywordExtractor {
 
     public KeywordList extractKeywords(String text) throws UnirestException {
         HttpResponse<JsonNode> response = Unirest.post("http://api.cortical.io:80/rest/text/keywords?retina_name=en_associative")

@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class ResponseProcessor {
 
-    private KeywordParser keywordParser = new KeywordParser();
+    private KeywordExtractor keywordExtractor = new KeywordExtractor();
 
     public KeywordDictionary processClassResponseMap(InputMap inputMap) throws UnirestException {
 
@@ -15,7 +15,7 @@ public class ResponseProcessor {
         HashMap<Integer, Response> map = inputMap.getInputMap();
 
         for (int i = 1; i < 6; i++) {
-            KeywordList keywordList = keywordParser.extractKeywords(map.get(i).getResponse());
+            KeywordList keywordList = keywordExtractor.extractKeywords(map.get(i).getResponse());
             classResponses.add(keywordList);
         }
         return classResponses;
@@ -27,7 +27,7 @@ public class ResponseProcessor {
         HashMap<Integer, Response> map = inputMap.getInputMap();
 
         for (int i = 6; i < 10; i++) {
-            KeywordList keywordList = keywordParser.extractKeywords(map.get(i).getResponse());
+            KeywordList keywordList = keywordExtractor.extractKeywords(map.get(i).getResponse());
             raceResponses.add(keywordList);
         }
         return raceResponses;

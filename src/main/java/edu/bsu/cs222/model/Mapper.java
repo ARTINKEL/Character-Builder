@@ -6,11 +6,13 @@ import java.io.IOException;
 
 public class Mapper {
 
+    private InputMap inputMap;
     private DataGenerator dataGenerator = new DataGenerator();
     private KeywordDictionary classFileKeywords = new KeywordDictionary();
     private KeywordDictionary raceFileKeywords = new KeywordDictionary();
 
-    public Mapper() throws IOException, UnirestException {
+    public Mapper(InputMap inputMap) throws IOException, UnirestException {
+        this.inputMap = inputMap;
         populateFileDictionaries();
     }
 
