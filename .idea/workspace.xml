@@ -7,40 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="246033e6-5316-4904-ad71-c36844e676fa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponseProcessor.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/ListGenerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestContentCreator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestContentSplitter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestListGenerator.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/DataGenerator.class" afterPath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/DataGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/KeywordDictionary.class" afterPath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/KeywordDictionary.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/KeywordList.class" afterPath="$PROJECT_DIR$/target/classes/edu/bsu/cs222/model/KeywordList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestDataGenerator.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/bsu/cs222/TestDataGenerator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Barbarian.txt" afterPath="$PROJECT_DIR$/target/classes/Barbarian.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Bard.txt" afterPath="$PROJECT_DIR$/target/classes/Bard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Cleric.txt" afterPath="$PROJECT_DIR$/target/classes/Cleric.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dragonborn.txt" afterPath="$PROJECT_DIR$/target/classes/Dragonborn.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Druid.txt" afterPath="$PROJECT_DIR$/target/classes/Druid.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dwarf.txt" afterPath="$PROJECT_DIR$/target/classes/Dwarf.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Elf.txt" afterPath="$PROJECT_DIR$/target/classes/Elf.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Fighter.txt" afterPath="$PROJECT_DIR$/target/classes/Fighter.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Gnome.txt" afterPath="$PROJECT_DIR$/target/classes/Gnome.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Half-Elf.txt" afterPath="$PROJECT_DIR$/target/classes/Half-Elf.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Half-Orc.txt" afterPath="$PROJECT_DIR$/target/classes/Half-Orc.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Halfling.txt" afterPath="$PROJECT_DIR$/target/classes/Halfling.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Human.txt" afterPath="$PROJECT_DIR$/target/classes/Human.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Monk.txt" afterPath="$PROJECT_DIR$/target/classes/Monk.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Paladin.txt" afterPath="$PROJECT_DIR$/target/classes/Paladin.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Ranger.txt" afterPath="$PROJECT_DIR$/target/classes/Ranger.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Rogue.txt" afterPath="$PROJECT_DIR$/target/classes/Rogue.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Sorcerer.txt" afterPath="$PROJECT_DIR$/target/classes/Sorcerer.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tiefling.txt" afterPath="$PROJECT_DIR$/target/classes/Tiefling.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Warlock.txt" afterPath="$PROJECT_DIR$/target/classes/Warlock.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Wizard.txt" afterPath="$PROJECT_DIR$/target/classes/Wizard.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponseProcessor.java" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponseProcessor.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,17 +21,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="UIController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-17">
+              <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Mapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state relative-caret-position="20">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
                 <element signature="e#713#714#0" expanded="true" />
                 <element signature="e#740#741#0" expanded="true" />
                 <element signature="e#784#785#0" expanded="true" />
                 <element signature="e#811#812#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InputMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/InputMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,31 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputMap.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/InputMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UIController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="KeywordParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -117,22 +86,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResponseProcessor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ResponseProcessor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestResponseProcessor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestResponseProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponseProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="623">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -225,8 +196,8 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponseProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java" />
       </list>
     </option>
   </component>
@@ -782,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510532257850</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Create new class ResponseProcessor and its test class">
+      <created>1510536281431</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1510536281431</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -910,7 +888,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Started integrating model layer into view" />
     <MESSAGE value="Add test cases" />
     <MESSAGE value="Created a way to get an array of responses." />
     <MESSAGE value="Cleaned up UI." />
@@ -935,7 +912,8 @@
     <MESSAGE value="Split CalculateResult method into two separate methods for race and class&#10;Create corresponding test methods in TestMapper" />
     <MESSAGE value="Change Questions class to QuestionsMap class for clarity" />
     <MESSAGE value="Implemented methods from DataGenerator in Mapper constructor&#10;Delete unused Test class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented methods from DataGenerator in Mapper constructor&#10;Delete unused Test class" />
+    <MESSAGE value="Create new class ResponseProcessor and its test class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new class ResponseProcessor and its test class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -947,7 +925,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/SentimentAnalysisParser.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/layout.fxml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseParser.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/event/EventHandler.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/application/Application.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponse.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1120,14 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Bard.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1178,47 +1147,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/event/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/InputMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1231,18 +1163,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/KeywordParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponseProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="623">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/InputMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding />
         </state>
       </provider>
