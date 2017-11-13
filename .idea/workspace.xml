@@ -8,8 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="246033e6-5316-4904-ad71-c36844e676fa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/StatGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/StatGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestStatGenerator.java" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestStatGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,20 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UIController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UIController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="162" column="0" lean-forward="true" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="193" column="122" lean-forward="false" selection-start-line="193" selection-start-column="122" selection-end-line="193" selection-end-column="122" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatGenerator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StatGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/StatGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1252">
+            <state relative-caret-position="3360">
               <caret line="168" column="1" lean-forward="false" selection-start-line="168" selection-start-column="1" selection-end-line="168" selection-end-column="1" />
               <folding />
             </state>
@@ -135,12 +134,12 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestDataGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestResponseProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/SentimentAnalysis.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestSentimentAnalysis.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/StatGenerator.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestStatGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
       </list>
     </option>
   </component>
@@ -793,7 +792,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510608676735</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Implement method to adjust for racial bonuses&#10;Create corresponding unit tests">
+      <created>1510609650271</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1510609650271</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -849,7 +855,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26131222" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26131222" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -901,7 +907,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed version number" />
     <MESSAGE value="Create TestKeywordParser test class&#10;Create KeywordParser class&#10;Implement KeywordParser from Cortical.io API&#10;Reformat Mapper for use with the API" />
     <MESSAGE value="Update TestKeywordParser&#10;Implement Keyword&#10;Implement KeywordList&#10;Implement KeywordDictionary" />
     <MESSAGE value="Update Test classes for KeywordParser and DataGenerator&#10;Implement DataGenerator method GenerateKeywordsList" />
@@ -926,7 +931,8 @@
     <MESSAGE value="Write test for GetSentiment method of SentimentAnalysis" />
     <MESSAGE value="Implement GetSentiment with helper methods" />
     <MESSAGE value="Create StatGenerator and TestStatGenerator&#10;Implement 2 unit tests and generateStandardArray functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create StatGenerator and TestStatGenerator&#10;Implement 2 unit tests and generateStandardArray functionality" />
+    <MESSAGE value="Implement method to adjust for racial bonuses&#10;Create corresponding unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement method to adjust for racial bonuses&#10;Create corresponding unit tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1272,14 +1278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="162" column="0" lean-forward="true" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TestStatGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -1290,8 +1288,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/StatGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1252">
+        <state relative-caret-position="3360">
           <caret line="168" column="1" lean-forward="false" selection-start-line="168" selection-start-column="1" selection-end-line="168" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="193" column="122" lean-forward="false" selection-start-line="193" selection-start-column="122" selection-end-line="193" selection-end-column="122" />
           <folding />
         </state>
       </provider>
