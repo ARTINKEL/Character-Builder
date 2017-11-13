@@ -31,6 +31,7 @@ public class UIController extends Application {
     private QuestionsMap questionsMap = new QuestionsMap();
     private ErrorHandler errorHandler = new ErrorHandler();
     private TextArea inputTextArea = new TextArea();
+    private StatGenerator statGenerator = new StatGenerator();
 
     private int currentQuestion = 1;
 
@@ -189,6 +190,8 @@ public class UIController extends Application {
         if (mapper != null) {
             raceResult = mapper.calculateRaceResult();
             classResult = mapper.calculateClassResult();
+            HashMap<String, Integer> rawAbilityScores = statGenerator.generateStandardArray(classResult);
+            HashMap<String, Integer> adjustedAbilityScores = statGenerator.applyRacialBonus(rawAbilityScores, raceResult);
         }
     }
 
