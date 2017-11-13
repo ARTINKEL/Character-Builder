@@ -39,6 +39,7 @@ public class UIController extends Application {
     private Label errorLabel = new Label();
     private Label resultLabel = new Label();
     private Label helpLabel = new Label();
+    private Label abilityScoreLabel = new Label();
 
     private String raceResult = "";
     private String classResult = "";
@@ -192,12 +193,26 @@ public class UIController extends Application {
             classResult = mapper.calculateClassResult();
             HashMap<String, Integer> rawAbilityScores = statGenerator.generateStandardArray(classResult);
             HashMap<String, Integer> adjustedAbilityScores = statGenerator.applyRacialBonus(rawAbilityScores, raceResult);
+            populateAbilityScoreText(adjustedAbilityScores);
         }
+    }
+
+    private void populateAbilityScoreText(HashMap<String, Integer> map) {
+
+        String result = map.get("Strength").toString() + "\n" +
+                        map.get("Dexterity").toString() + "\n" +
+                        map.get("Constitution").toString() + "\n" +
+                        map.get("Intelligence").toString() + "\n" +
+                        map.get("Wisdom").toString() + "\n" +
+                        map.get("Charisma").toString();
+
+        abilityScoreLabel.setText(result);
     }
 
     private void openResultWindow() {
         displayResult();
         grid.add(resultLabel, 0, 2);
+        grid.add(abilityScoreLabel, 0, 3);
 
         StackPane secondaryLayout = new StackPane();
         secondaryLayout.getChildren().add(resultLabel);
