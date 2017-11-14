@@ -8,29 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="246033e6-5316-4904-ad71-c36844e676fa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Barbarian.txt" afterPath="$PROJECT_DIR$/target/classes/Barbarian.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Bard.txt" afterPath="$PROJECT_DIR$/target/classes/Bard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Cleric.txt" afterPath="$PROJECT_DIR$/target/classes/Cleric.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dragonborn.txt" afterPath="$PROJECT_DIR$/target/classes/Dragonborn.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Druid.txt" afterPath="$PROJECT_DIR$/target/classes/Druid.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dwarf.txt" afterPath="$PROJECT_DIR$/target/classes/Dwarf.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Elf.txt" afterPath="$PROJECT_DIR$/target/classes/Elf.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Fighter.txt" afterPath="$PROJECT_DIR$/target/classes/Fighter.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Gnome.txt" afterPath="$PROJECT_DIR$/target/classes/Gnome.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Half-Elf.txt" afterPath="$PROJECT_DIR$/target/classes/Half-Elf.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Half-Orc.txt" afterPath="$PROJECT_DIR$/target/classes/Half-Orc.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Halfling.txt" afterPath="$PROJECT_DIR$/target/classes/Halfling.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Human.txt" afterPath="$PROJECT_DIR$/target/classes/Human.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Monk.txt" afterPath="$PROJECT_DIR$/target/classes/Monk.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Paladin.txt" afterPath="$PROJECT_DIR$/target/classes/Paladin.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Ranger.txt" afterPath="$PROJECT_DIR$/target/classes/Ranger.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Rogue.txt" afterPath="$PROJECT_DIR$/target/classes/Rogue.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Sorcerer.txt" afterPath="$PROJECT_DIR$/target/classes/Sorcerer.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tiefling.txt" afterPath="$PROJECT_DIR$/target/classes/Tiefling.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Warlock.txt" afterPath="$PROJECT_DIR$/target/classes/Warlock.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Wizard.txt" afterPath="$PROJECT_DIR$/target/classes/Wizard.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,14 +20,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UIController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UIController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3717">
-              <caret line="220" column="0" lean-forward="true" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+            <state relative-caret-position="97">
+              <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
               <folding>
-                <element signature="e#8115#8116#0" expanded="true" />
-                <element signature="e#8211#8212#0" expanded="true" />
+                <element signature="e#8114#8115#0" expanded="true" />
+                <element signature="e#8210#8211#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResponseProcessor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ResponseProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
@@ -96,8 +74,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="jacobknoll &lt;jcknoll@bsu.edu&gt;" />
         <option value="Austin Tinkel &lt;austin.tinkel@gmail.com&gt;" />
+        <option value="jacobknoll &lt;jcknoll@bsu.edu&gt;" />
         <option value="Nick Hoover &lt;hoover3330@gmail.com&gt;" />
       </list>
     </option>
@@ -169,8 +147,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/Warlock.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/Wizard.txt" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/ResponseProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java" />
       </list>
     </option>
   </component>
@@ -811,7 +789,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510617424361</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Fix a critical bug in mapper">
+      <created>1510630256382</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1510630256382</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -949,7 +934,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed inputTextField to a text area to enable word wrapping and allowing for cleaner and more intuitive user input" />
     <MESSAGE value="Changed way the mapper prioritizes in the event of a tie" />
     <MESSAGE value="Changed version number" />
     <MESSAGE value="Create TestKeywordParser test class&#10;Create KeywordParser class&#10;Implement KeywordParser from Cortical.io API&#10;Reformat Mapper for use with the API" />
@@ -974,7 +958,8 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/ARTINKEL/Character-Designer&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="Implemented StatGenerator in UIController" />
     <MESSAGE value="Edit resource files to better work with the keyword parser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit resource files to better work with the keyword parser" />
+    <MESSAGE value="Fix a critical bug in mapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix a critical bug in mapper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1279,17 +1264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3717">
-          <caret line="220" column="0" lean-forward="true" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-          <folding>
-            <element signature="e#8115#8116#0" expanded="true" />
-            <element signature="e#8211#8212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/model/Mapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
@@ -1303,6 +1277,17 @@
         <state relative-caret-position="380">
           <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/view/UIController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <element signature="e#8114#8115#0" expanded="true" />
+            <element signature="e#8210#8211#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

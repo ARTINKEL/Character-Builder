@@ -24,7 +24,7 @@ import java.io.IOException;
 public class UIController extends Application {
 
     private final int WIDTH = 500;
-    private final int HEIGHT = 370;
+    private final int HEIGHT = 430;
 
     private HashMap<Integer, Response> inputMap = new HashMap<>();
 
@@ -57,7 +57,7 @@ public class UIController extends Application {
 
         Text sceneTitle = new Text("Character Designer");
         GridPane.setHalignment(sceneTitle, HPos.CENTER);
-        sceneTitle.setFont(Font.font("Herculanum", FontWeight.BOLD, 20));
+        sceneTitle.setFont(Font.font("Castellar", FontWeight.BOLD, 20));
         grid.add(sceneTitle, 0, 0, 1, 2);
         GridPane.setHalignment(questionLabel, HPos.CENTER);
         grid.add(questionLabel, 0, 2);
