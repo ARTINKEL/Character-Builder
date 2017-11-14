@@ -78,9 +78,7 @@ public class UIController extends Application {
         Button helpButton = new Button("Help");
         backButton.setVisible(false);
 
-
         primaryStage.setOnCloseRequest(e -> Platform.exit());
-
 
         grid.add(nextButton, 0, 5);
         grid.add(clearButton, 0, 6);
@@ -252,6 +250,6 @@ public class UIController extends Application {
         helpLabel.setText("For best results please use full and complete sentences\n" +
                 "The more you put into this, the more you will get out\n" +
                 "Result will most likely take a minute to be calculated\n" +
-                "Use American English (honor vs honour, gray vs grey, etc");`
+                "Use American English (honor vs honour, gray vs grey, etc");
     }
 }

@@ -22,7 +22,7 @@ public class ResponseProcessor {
     public KeywordDictionary processRaceResponseMap(HashMap<Integer, Response> inputMap) throws UnirestException {
         KeywordDictionary raceResponses = new KeywordDictionary();
 
-        for (int i = 6; i < 11; i++) {
+        for (int i = 6; i < 10; i++) {
             KeywordList keywordList = keywordExtractor.extractKeywords(inputMap.get(i).getResponse());
             raceResponses.add(keywordList);
         }
