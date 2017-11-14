@@ -249,6 +249,9 @@ public class UIController extends Application {
     }
 
     private void displayHelp() {
-        helpLabel.setText("Don't use contraction's please\nResult will most likely take a minute to be calculated \nSorry fam.\n Use American English (honor vs honour or gray vs grey");
+        helpLabel.setText("For best results please use full and complete sentences\n" +
+                "The more you put into this, the more you will get out\n" +
+                "Result will most likely take a minute to be calculated\n" +
+                "Use American English (honor vs honour, gray vs grey, etc");`
     }
 }
