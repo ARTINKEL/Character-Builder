@@ -31,7 +31,6 @@ public class UIController extends Application {
     private QuestionsMap questionsMap = new QuestionsMap();
     private ErrorHandler errorHandler = new ErrorHandler();
     private TextArea inputTextArea = new TextArea();
-    private StatGenerator statGenerator = new StatGenerator();
 
     private int currentQuestion = 1;
 
@@ -39,7 +38,6 @@ public class UIController extends Application {
     private Label errorLabel = new Label();
     private Label resultLabel = new Label();
     private Label helpLabel = new Label();
-    private Label abilityScoreLabel = new Label();
 
     private String raceResult = "";
     private String classResult = "";
@@ -47,7 +45,7 @@ public class UIController extends Application {
     private GridPane grid = new GridPane();
     private GridPane resultsGrid = new GridPane();
 
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
         primaryStage.setTitle("Character Designer v0.2.0");
 
         grid.setAlignment(Pos.TOP_CENTER);
@@ -190,22 +188,7 @@ public class UIController extends Application {
         if (mapper != null) {
             raceResult = mapper.calculateRaceResult();
             classResult = mapper.calculateClassResult();
-            HashMap<String, Integer> rawAbilityScores = statGenerator.generateStandardArray(classResult);
-            HashMap<String, Integer> adjustedAbilityScores = statGenerator.applyRacialBonus(rawAbilityScores, raceResult);
-            populateAbilityScoreText(adjustedAbilityScores);
         }
-    }
-
-    private void populateAbilityScoreText(HashMap<String, Integer> map) {
-
-        String result = "Strength: " + map.get("Strength").toString() + "\n" +
-                        "Dexterity: " + map.get("Dexterity").toString() + "\n" +
-                        "Constitution: " + map.get("Constitution").toString() + "\n" +
-                        "Intelligence: " + map.get("Intelligence").toString() + "\n" +
-                        "Wisdom: " + map.get("Wisdom").toString() + "\n" +
-                        "Charisma: " + map.get("Charisma").toString();
-
-        abilityScoreLabel.setText(result);
     }
 
     private void openResultWindow() {
@@ -215,7 +198,6 @@ public class UIController extends Application {
         StackPane secondaryLayout = new StackPane();
         secondaryLayout.getChildren().add(resultsGrid);
         resultsGrid.add(resultLabel, 0, 1);
-        resultsGrid.add(abilityScoreLabel, 0, 2);
 
         Scene secondScene = new Scene(secondaryLayout, 300, 175);
 
