@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class KeywordLexicon {
 
-    private ArrayList<KeywordList> arrayOfFileKeywords = new ArrayList<>();
+    private final ArrayList<KeywordList> arrayOfFileKeywords = new ArrayList<>();
 
     public KeywordList getKeywordList(int i) {
         return arrayOfFileKeywords.get(i);

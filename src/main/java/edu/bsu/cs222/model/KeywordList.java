@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class KeywordList {
 
-    private ArrayList<Keyword> keywordList = new ArrayList<>();
+    private final ArrayList<Keyword> keywordList = new ArrayList<>();
 
     public void add(Keyword keyword) {
         keywordList.add(keyword);

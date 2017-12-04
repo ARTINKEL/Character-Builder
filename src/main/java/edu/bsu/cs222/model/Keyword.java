@@ -2,7 +2,7 @@ package edu.bsu.cs222.model;
 
 public class Keyword {
 
-    private String keyword;
+    private final String keyword;
 
     public Keyword(String keyword) {
         this.keyword = keyword;
