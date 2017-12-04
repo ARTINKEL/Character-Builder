@@ -2,7 +2,7 @@ package edu.bsu.cs222.model;
 
 import java.util.ArrayList;
 
-public class KeywordDictionary {
+public class KeywordLexicon {
 
     private ArrayList<KeywordList> arrayOfFileKeywords = new ArrayList<>();
 

@@ -26,7 +26,7 @@ public class TestResponseProcessor {
         inputMap.put(9, new Response("Sword"));
         inputMap.put(10, new Response("Sword"));
 
-        KeywordDictionary responseKeywords = responseProcessor.processClassResponseMap(inputMap);
+        KeywordLexicon responseKeywords = responseProcessor.processClassResponseMap(inputMap);
         Assert.assertNotNull(responseKeywords);
     }
 
@@ -46,7 +46,7 @@ public class TestResponseProcessor {
         inputMap.put(9, new Response("Sword"));
         inputMap.put(10, new Response("Sword"));
 
-        KeywordDictionary expected = new KeywordDictionary();
+        KeywordLexicon expected = new KeywordLexicon();
         KeywordList list1 = new KeywordList();
         list1.add(new Keyword("sword"));
         list1.add(new Keyword("fire"));
@@ -56,7 +56,7 @@ public class TestResponseProcessor {
         list2.add(new Keyword("fire"));
         expected.add(list2);
 
-        KeywordDictionary actual = responseProcessor.processClassResponseMap(inputMap);
+        KeywordLexicon actual = responseProcessor.processClassResponseMap(inputMap);
 
         Assert.assertEquals(expected.getKeywordList(0).get(0).getKeyword(), actual.getKeywordList(0).get(0).getKeyword());
     }
@@ -77,7 +77,7 @@ public class TestResponseProcessor {
         inputMap.put(9, new Response("Sword"));
         inputMap.put(10, new Response("Sword"));
 
-        KeywordDictionary responseKeywords = responseProcessor.processRaceResponseMap(inputMap);
+        KeywordLexicon responseKeywords = responseProcessor.processRaceResponseMap(inputMap);
         Assert.assertNotNull(responseKeywords);
     }
 
@@ -97,7 +97,7 @@ public class TestResponseProcessor {
         inputMap.put(9, new Response("Sword"));
         inputMap.put(10, new Response("Sword"));
 
-        KeywordDictionary expected = new KeywordDictionary();
+        KeywordLexicon expected = new KeywordLexicon();
         KeywordList list1 = new KeywordList();
         list1.add(new Keyword("sword"));
         list1.add(new Keyword("fire"));
@@ -107,7 +107,7 @@ public class TestResponseProcessor {
         list2.add(new Keyword("fire"));
         expected.add(list2);
 
-        KeywordDictionary actual = responseProcessor.processRaceResponseMap(inputMap);
+        KeywordLexicon actual = responseProcessor.processRaceResponseMap(inputMap);
 
         Assert.assertEquals(expected.getKeywordList(0).get(0).getKeyword(), actual.getKeywordList(0).get(0).getKeyword());
     }

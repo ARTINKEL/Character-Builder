@@ -3,7 +3,7 @@ package edu.bsu.cs222;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import edu.bsu.cs222.model.DataGenerator;
 import edu.bsu.cs222.model.Keyword;
-import edu.bsu.cs222.model.KeywordDictionary;
+import edu.bsu.cs222.model.KeywordLexicon;
 import edu.bsu.cs222.model.KeywordList;
 import org.junit.Assert;
 import org.junit.Test;
@@ -28,14 +28,14 @@ public class TestDataGenerator {
     @Test
     public void testProcessClassFiles() throws IOException, UnirestException {
         DataGenerator dataGenerator = new DataGenerator();
-        KeywordDictionary actual = dataGenerator.processClassFiles();
+        KeywordLexicon actual = dataGenerator.processClassFiles();
         Assert.assertNotNull(actual);
     }
 
     @Test
     public void testProcessRaceFiles() throws IOException, UnirestException {
         DataGenerator dataGenerator = new DataGenerator();
-        KeywordDictionary actual = dataGenerator.processRaceFiles();
+        KeywordLexicon actual = dataGenerator.processRaceFiles();
         Assert.assertNotNull(actual);
     }
 }

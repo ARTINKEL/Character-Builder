@@ -12,9 +12,9 @@ public class ResponseProcessor {
 
     private KeywordExtractor keywordExtractor = new KeywordExtractor();
 
-    public KeywordDictionary processClassResponseMap(HashMap<Integer, Response> inputMap) throws UnirestException {
+    public KeywordLexicon processClassResponseMap(HashMap<Integer, Response> inputMap) throws UnirestException {
 
-        KeywordDictionary classResponses = new KeywordDictionary();
+        KeywordLexicon classResponses = new KeywordLexicon();
 
         for (int i = classBeginningIndex; i < classEndingIndex; i++) {
             KeywordList keywordList = keywordExtractor.extractKeywords(inputMap.get(i).getResponse());
@@ -23,8 +23,8 @@ public class ResponseProcessor {
         return classResponses;
     }
 
-    public KeywordDictionary processRaceResponseMap(HashMap<Integer, Response> inputMap) throws UnirestException {
-        KeywordDictionary raceResponses = new KeywordDictionary();
+    public KeywordLexicon processRaceResponseMap(HashMap<Integer, Response> inputMap) throws UnirestException {
+        KeywordLexicon raceResponses = new KeywordLexicon();
 
         for (int i = classEndingIndex; i < raceEndingIndex; i++) {
             KeywordList keywordList = keywordExtractor.extractKeywords(inputMap.get(i).getResponse());

@@ -38,22 +38,22 @@ public class DataGenerator {
         }
     };
 
-    public KeywordDictionary processClassFiles() throws UnirestException, IOException {
-        KeywordDictionary classKeywordDictionary = new KeywordDictionary();
+    public KeywordLexicon processClassFiles() throws UnirestException, IOException {
+        KeywordLexicon classKeywordLexicon = new KeywordLexicon();
 
         for (String file : classFileNamesList) {
-            classKeywordDictionary.add(generateKeywordsList(file));
+            classKeywordLexicon.add(generateKeywordsList(file));
         }
-        return classKeywordDictionary;
+        return classKeywordLexicon;
     }
 
-    public KeywordDictionary processRaceFiles() throws IOException, UnirestException {
-        KeywordDictionary raceKeywordDictionary = new KeywordDictionary();
+    public KeywordLexicon processRaceFiles() throws IOException, UnirestException {
+        KeywordLexicon raceKeywordLexicon = new KeywordLexicon();
 
         for (String file : raceFileNamesList) {
-            raceKeywordDictionary.add(generateKeywordsList(file));
+            raceKeywordLexicon.add(generateKeywordsList(file));
         }
-        return raceKeywordDictionary;
+        return raceKeywordLexicon;
     }
 
     public KeywordList generateKeywordsList(String filename) throws IOException, UnirestException {

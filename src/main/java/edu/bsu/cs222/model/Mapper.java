@@ -10,10 +10,10 @@ public class Mapper {
     private DataGenerator dataGenerator = new DataGenerator();
     private ResponseProcessor responseProcessor = new ResponseProcessor();
 
-    private KeywordDictionary classFileKeywords = new KeywordDictionary();
-    private KeywordDictionary raceFileKeywords = new KeywordDictionary();
-    private KeywordDictionary classResponseKeywords = new KeywordDictionary();
-    private KeywordDictionary raceResponseKeywords = new KeywordDictionary();
+    private KeywordLexicon classFileKeywords = new KeywordLexicon();
+    private KeywordLexicon raceFileKeywords = new KeywordLexicon();
+    private KeywordLexicon classResponseKeywords = new KeywordLexicon();
+    private KeywordLexicon raceResponseKeywords = new KeywordLexicon();
 
     public Mapper(HashMap<Integer, Response> inputMap) throws IOException, UnirestException {
         populateFileDictionaries();
