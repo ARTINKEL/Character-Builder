@@ -26,25 +26,21 @@ public class UIController extends Application {
     private final int WIDTH = 500;
     private final int HEIGHT = 430;
 
-    private HashMap<Integer, Response> inputMap = new HashMap<>();
-
     private QuestionsMap questionsMap = new QuestionsMap();
     private ErrorHandler errorHandler = new ErrorHandler();
-    private TextArea inputTextArea = new TextArea();
 
+    private HashMap<Integer, Response> inputMap = new HashMap<>();
     private int currentQuestion = 1;
-
     private boolean firstQuestion() { return (currentQuestion == 1); }
     private boolean finalQuestion() { return (currentQuestion == 10); }
+    private String raceResult = "";
+    private String classResult = "";
 
     private Label questionLabel = new Label(questionsMap.getQuestion(currentQuestion));
     private Label errorLabel = new Label();
     private Label resultLabel = new Label();
     private Label helpLabel = new Label();
-
-    private String raceResult = "";
-    private String classResult = "";
-
+    private TextArea inputTextArea = new TextArea();
     private GridPane grid = new GridPane();
     private GridPane resultsGrid = new GridPane();
 

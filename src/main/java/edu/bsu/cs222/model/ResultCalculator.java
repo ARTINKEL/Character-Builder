@@ -16,12 +16,12 @@ public class ResultCalculator {
     private KeywordLexicon raceResponseKeywords;
 
     public ResultCalculator(HashMap<Integer, Response> inputMap) throws IOException, UnirestException {
-        populateFileDictionaries();
+        populateFileLexicons();
         classResponseKeywords = responseProcessor.processClassResponseMap(inputMap);
         raceResponseKeywords = responseProcessor.processRaceResponseMap(inputMap);
     }
 
-    private void populateFileDictionaries() throws IOException, UnirestException {
+    private void populateFileLexicons() throws IOException, UnirestException {
         classFileKeywords = dataGenerator.processClassFiles();
         raceFileKeywords = dataGenerator.processRaceFiles();
     }
