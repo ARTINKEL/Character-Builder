@@ -3,10 +3,8 @@ package edu.bsu.cs222;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import edu.bsu.cs222.model.DataGenerator;
 import edu.bsu.cs222.model.Keyword;
-import edu.bsu.cs222.model.KeywordLexicon;
 import edu.bsu.cs222.model.KeywordList;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import java.io.IOException;
 

@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class QuestionsMap {
 
-    HashMap<Integer, String> questionsMap = new HashMap<>();
+    public HashMap<Integer, String> questionsMap = new HashMap<>();
 
     public QuestionsMap() {
         populateQuestions();
