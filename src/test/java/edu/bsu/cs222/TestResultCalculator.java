@@ -10,6 +10,7 @@ import java.util.HashMap;
 
 public class TestResultCalculator {
 
+    private HashMap<Integer, Response> inputMap = getSampleInputMap();
     private HashMap<Integer, Response> getSampleInputMap() {
         HashMap<Integer, Response> inputMap = new HashMap<>();
         inputMap.put(1, new Response("Sword"));
@@ -27,7 +28,6 @@ public class TestResultCalculator {
 
     @Test
     public void testCompare() throws IOException, UnirestException {
-        HashMap<Integer, Response> inputMap = getSampleInputMap();
         ResultCalculator resultCalculator = new ResultCalculator(inputMap);
         KeywordList list1 = new KeywordList();
         list1.add(new Keyword("sword"));
@@ -42,14 +42,12 @@ public class TestResultCalculator {
 
     @Test
     public void testCalculateClassResult_Accuracy() throws IOException, UnirestException {
-        HashMap<Integer, Response> inputMap = getSampleInputMap();
         ResultCalculator resultCalculator = new ResultCalculator(inputMap);
         Assert.assertEquals("Fighter", resultCalculator.calculateClassResult());
     }
 
     @Test
     public void testCalculateRaceResult_Accuracy() throws IOException, UnirestException {
-        HashMap<Integer, Response> inputMap = getSampleInputMap();
         ResultCalculator resultCalculator = new ResultCalculator(inputMap);
         Assert.assertEquals("Elf", resultCalculator.calculateRaceResult());
     }
