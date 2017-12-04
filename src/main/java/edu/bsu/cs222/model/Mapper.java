@@ -12,8 +12,8 @@ public class Mapper {
 
     private KeywordLexicon classFileKeywords = new KeywordLexicon();
     private KeywordLexicon raceFileKeywords = new KeywordLexicon();
-    private KeywordLexicon classResponseKeywords = new KeywordLexicon();
-    private KeywordLexicon raceResponseKeywords = new KeywordLexicon();
+    private KeywordLexicon classResponseKeywords;
+    private KeywordLexicon raceResponseKeywords;
 
     public Mapper(HashMap<Integer, Response> inputMap) throws IOException, UnirestException {
         populateFileDictionaries();

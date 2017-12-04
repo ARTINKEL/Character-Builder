@@ -12,7 +12,6 @@ public class TestMapper {
 
     private HashMap<Integer, Response> getSampleInputMap() {
         HashMap<Integer, Response> inputMap = new HashMap<>();
-
         inputMap.put(1, new Response("Sword"));
         inputMap.put(2, new Response("Sword"));
         inputMap.put(3, new Response("Sword"));
@@ -23,31 +22,19 @@ public class TestMapper {
         inputMap.put(8, new Response("Sword"));
         inputMap.put(9, new Response("Sword"));
         inputMap.put(10, new Response("Sword"));
-
         return inputMap;
-    }
-
-    @Test
-    public void testCalculateClassResult_NotNull() throws IOException, UnirestException {
-        HashMap<Integer, Response> inputMap = getSampleInputMap();
-        Mapper mapper = new Mapper(inputMap);
-        String result = mapper.calculateClassResult();
-        Assert.assertNotNull(result);
     }
 
     @Test
     public void testCompare() throws IOException, UnirestException {
         HashMap<Integer, Response> inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
-
         KeywordList list1 = new KeywordList();
         list1.add(new Keyword("sword"));
         list1.add(new Keyword("fire"));
-
         KeywordList list2 = new KeywordList();
         list2.add(new Keyword("sword"));
         list2.add(new Keyword("fire"));
-
         int actual = mapper.compareKeywords(list1, list2);
         int expected = 2;
         Assert.assertEquals(expected, actual);
@@ -57,22 +44,13 @@ public class TestMapper {
     public void testCalculateClassResult_Accuracy() throws IOException, UnirestException {
         HashMap<Integer, Response> inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
-        mapper.calculateClassResult();
-        Assert.assertEquals("", mapper.calculateClassResult());
-    }
-
-    @Test
-    public void testCalculateRaceResult_NotNull() throws IOException, UnirestException {
-        HashMap<Integer, Response> inputMap = getSampleInputMap();
-        Mapper mapper = new Mapper(inputMap);
-        String result = mapper.calculateRaceResult();
-        Assert.assertNotNull(result);
+        Assert.assertEquals("Fighter", mapper.calculateClassResult());
     }
 
     @Test
     public void testCalculateRaceResult_Accuracy() throws IOException, UnirestException {
         HashMap<Integer, Response> inputMap = getSampleInputMap();
         Mapper mapper = new Mapper(inputMap);
-
+        Assert.assertEquals("Elf", mapper.calculateRaceResult());
     }
 }

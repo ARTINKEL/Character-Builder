@@ -33,6 +33,9 @@ public class UIController extends Application {
     private TextArea inputTextArea = new TextArea();
 
     private int currentQuestion = 1;
+    
+    private boolean firstQuestion() { return (currentQuestion == 1); }
+    private boolean finalQuestion() { return (currentQuestion == 10); }
 
     private Label questionLabel = new Label(questionsMap.getQuestion(currentQuestion));
     private Label errorLabel = new Label();
@@ -109,7 +112,6 @@ public class UIController extends Application {
             }
         });
 
-
         backButton.setOnAction(event -> {
             if (!inputTextArea.getText().isEmpty()) {
                 recordResponse();
@@ -128,10 +130,6 @@ public class UIController extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-
-    private boolean finalQuestion() { return (currentQuestion == 10); }
-
-    private boolean firstQuestion() { return (currentQuestion == 1); }
 
     private void recordResponse() {
         Response response = new Response(inputTextArea.getText().toLowerCase());
