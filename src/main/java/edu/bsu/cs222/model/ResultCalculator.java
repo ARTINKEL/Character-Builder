@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Mapper {
+public class ResultCalculator {
     private DataGenerator dataGenerator = new DataGenerator();
     private ResponseProcessor responseProcessor = new ResponseProcessor();
 
@@ -15,7 +15,7 @@ public class Mapper {
     private KeywordLexicon classResponseKeywords;
     private KeywordLexicon raceResponseKeywords;
 
-    public Mapper(HashMap<Integer, Response> inputMap) throws IOException, UnirestException {
+    public ResultCalculator(HashMap<Integer, Response> inputMap) throws IOException, UnirestException {
         populateFileDictionaries();
         classResponseKeywords = responseProcessor.processClassResponseMap(inputMap);
         raceResponseKeywords = responseProcessor.processRaceResponseMap(inputMap);

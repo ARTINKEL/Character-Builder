@@ -33,7 +33,7 @@ public class UIController extends Application {
     private TextArea inputTextArea = new TextArea();
 
     private int currentQuestion = 1;
-    
+
     private boolean firstQuestion() { return (currentQuestion == 1); }
     private boolean finalQuestion() { return (currentQuestion == 10); }
 
@@ -177,15 +177,15 @@ public class UIController extends Application {
     }
 
     private void calculateResult() {
-        Mapper mapper = null;
+        ResultCalculator resultCalculator = null;
         try {
-            mapper = new Mapper(inputMap);
+            resultCalculator = new ResultCalculator(inputMap);
         } catch (IOException | UnirestException e) {
             e.printStackTrace();
         }
-        if (mapper != null) {
-            raceResult = mapper.calculateRaceResult();
-            classResult = mapper.calculateClassResult();
+        if (resultCalculator != null) {
+            raceResult = resultCalculator.calculateRaceResult();
+            classResult = resultCalculator.calculateClassResult();
         }
     }
 

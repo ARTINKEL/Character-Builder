@@ -8,7 +8,7 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.HashMap;
 
-public class TestMapper {
+public class TestResultCalculator {
 
     private HashMap<Integer, Response> getSampleInputMap() {
         HashMap<Integer, Response> inputMap = new HashMap<>();
@@ -28,14 +28,14 @@ public class TestMapper {
     @Test
     public void testCompare() throws IOException, UnirestException {
         HashMap<Integer, Response> inputMap = getSampleInputMap();
-        Mapper mapper = new Mapper(inputMap);
+        ResultCalculator resultCalculator = new ResultCalculator(inputMap);
         KeywordList list1 = new KeywordList();
         list1.add(new Keyword("sword"));
         list1.add(new Keyword("fire"));
         KeywordList list2 = new KeywordList();
         list2.add(new Keyword("sword"));
         list2.add(new Keyword("fire"));
-        int actual = mapper.compareKeywords(list1, list2);
+        int actual = resultCalculator.compareKeywords(list1, list2);
         int expected = 2;
         Assert.assertEquals(expected, actual);
     }
@@ -43,14 +43,14 @@ public class TestMapper {
     @Test
     public void testCalculateClassResult_Accuracy() throws IOException, UnirestException {
         HashMap<Integer, Response> inputMap = getSampleInputMap();
-        Mapper mapper = new Mapper(inputMap);
-        Assert.assertEquals("Fighter", mapper.calculateClassResult());
+        ResultCalculator resultCalculator = new ResultCalculator(inputMap);
+        Assert.assertEquals("Fighter", resultCalculator.calculateClassResult());
     }
 
     @Test
     public void testCalculateRaceResult_Accuracy() throws IOException, UnirestException {
         HashMap<Integer, Response> inputMap = getSampleInputMap();
-        Mapper mapper = new Mapper(inputMap);
-        Assert.assertEquals("Elf", mapper.calculateRaceResult());
+        ResultCalculator resultCalculator = new ResultCalculator(inputMap);
+        Assert.assertEquals("Elf", resultCalculator.calculateRaceResult());
     }
 }
