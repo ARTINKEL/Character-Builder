@@ -1,4 +1,4 @@
-# User Response Based Character Designer
+# User Response Based Character Builder
 This program will ask a series of questions. It is best to answer them in as much detail as possible, using multiple descriptive words.
 After the last question is answered, a Race and Class for a Dungeons and Dragons character will be generated based off of the user response.
 
