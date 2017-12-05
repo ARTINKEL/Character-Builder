@@ -3,7 +3,6 @@ package edu.bsu.cs222.view;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -27,7 +26,7 @@ public class Main extends Application {
             pane = loader.load();
 
             UIController mainWindowController = loader.getController();
-            mainWindowController.setMain(this);
+            //mainWindowController.setMain(this);
 
             Scene scene = new Scene(pane);
 
@@ -40,13 +39,7 @@ public class Main extends Application {
             e.printStackTrace();
         }
     }
-
-    public void closewindow() {
-        primaryStage.close();
-    }
-
     public static void main(String[] args) {
         launch(args);
     }
-
 }
