@@ -25,9 +25,6 @@ public class Main extends Application {
             loader.setLocation(getClass().getResource("/DesignerView.fxml"));
             pane = loader.load();
 
-            UIController mainWindowController = loader.getController();
-            //mainWindowController.setMain(this);
-
             Scene scene = new Scene(pane);
 
             primaryStage.setTitle("Character Designer v0.3.0");

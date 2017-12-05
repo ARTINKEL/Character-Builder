@@ -9,51 +9,46 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bsu.cs222.view.UIController">
-   <children>
-      <SplitPane dividerPositions="0.88" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
-         <items>
-            <Pane prefHeight="200.0" prefWidth="200.0">
-               <children>
-                   <Region focusTraversable="true" prefHeight="100.0" prefWidth="605.0" style="-fx-background-color: black;" />
-                  <Label layoutX="15.0" layoutY="15.0" style="-fx-text-fill: gold;" text="Character Designer">
-                     <font>
-                        <Font name="Arial Black" size="38.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="39.0" layoutY="3.0" style="-fx-text-fill: gold;" text="Dungeons &amp; Dragons">
-                     <font>
-                        <Font name="System Bold" size="19.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER" layoutX="275.0" layoutY="114.0" text="Qustion" />
-                  <TextArea fx:id="inputTextArea" layoutX="18.0" layoutY="153.0" prefHeight="108.0" prefWidth="562.0" promptText="Enter response here...." />
-                  <Label fx:id="questionLabel" alignment="CENTER" layoutX="255.0" layoutY="131.0" text="" />
-                  <Button fx:id="clearButton" layoutX="529.0" layoutY="268.0" mnemonicParsing="false" onAction="#clearButtonAction" text="Clear" />
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="edu.bsu.cs222.view.UIController">
+   <SplitPane dividerPositions="0.88" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <Region focusTraversable="true" prefHeight="100.0" prefWidth="605.0"
+                 style="-fx-background-color: black;"/>
+         <Label layoutX="15.0" layoutY="15.0" style="-fx-text-fill: gold;" text="Character Designer">
+            <font>
+               <Font name="Arial Black" size="38.0"/>
+            </font>
+         </Label>
+         <Label layoutX="39.0" layoutY="3.0" style="-fx-text-fill: gold;" text="Dungeons &amp; Dragons">
+            <font>
+               <Font name="System Bold" size="19.0"/>
+            </font>
+         </Label>
+         <Label alignment="CENTER" layoutX="275.0" layoutY="114.0" text="Qustion"/>
+         <TextArea fx:id="inputTextArea" layoutX="18.0" layoutY="153.0" prefHeight="108.0" prefWidth="562.0"
+                   promptText="Enter response here...."/>
+         <Label fx:id="questionLabel" alignment="CENTER" layoutX="255.0" layoutY="131.0"/>
+         <Button fx:id="clearButton" layoutX="529.0" layoutY="268.0" mnemonicParsing="false"
+                 onAction="#clearButtonAction" text="Clear"/>
 
-               </children></Pane>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <HBox prefHeight="44.0" prefWidth="598.0">
             <Pane prefHeight="200.0" prefWidth="200.0">
-               <children>
-                  <HBox prefHeight="44.0" prefWidth="598.0">
-                     <children>
-                        <Pane prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <Button fx:id="backButton" layoutX="8.0" layoutY="8.0" mnemonicParsing="false" onAction="#backButtonAction" text="Back" />
-                              <Button fx:id="helpButton" layoutX="65.0" layoutY="8.0" mnemonicParsing="false" onAction="#openHelpWindow" text="Help" />
-                           </children>
-                        </Pane>
-                        <Pane prefHeight="200.0" prefWidth="200.0" />
-                        <Pane prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <Button fx:id="nextButton" layoutX="145.0" layoutY="8.0" mnemonicParsing="false" onAction="#nextButtonAction" text="Next" />
-                              <Label fx:id="errorLabel" layoutX="14.0" layoutY="14.0" text="errorLabel" />
-                           </children>
-                        </Pane>
-                     </children>
-                  </HBox>
-               </children>
+               <Button fx:id="backButton" layoutX="8.0" layoutY="8.0" mnemonicParsing="false"
+                       onAction="#backButtonAction" text="Back"/>
+               <Button fx:id="helpButton" layoutX="65.0" layoutY="8.0" mnemonicParsing="false"
+                       onAction="#openHelpWindow" text="Help"/>
             </Pane>
-         </items>
-      </SplitPane>
-   </children>
+            <Pane prefHeight="200.0" prefWidth="200.0"/>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <Button fx:id="nextButton" layoutX="145.0" layoutY="8.0" mnemonicParsing="false"
+                       onAction="#nextButtonAction" text="Next"/>
+               <Label fx:id="errorLabel" layoutX="14.0" layoutY="14.0" text="errorLabel"/>
+            </Pane>
+         </HBox>
+      </Pane>
+   </SplitPane>
 </Pane>

@@ -16,12 +16,6 @@ import java.io.IOException;
 
 public class UIController {
 
-    private Main main;
-
-    public void setMain(Main main) {
-        this.main = main;
-    }
-
     private HashMap<Integer, Response> inputMap = new HashMap<>();
 
     private QuestionsMap questionsMap = new QuestionsMap();
