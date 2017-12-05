@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 public class Main extends Application {
@@ -20,7 +19,6 @@ public class Main extends Application {
 
     public void mainWindow(){
         try{
-            System.out.println(Main.class.getResource("/DesignerView.fxml"));
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/DesignerView.fxml"));
             pane = loader.load();

@@ -44,6 +44,11 @@ public class UIController {
     public Button clearButton;
 
     @FXML
+    private void initialize() {
+        questionLabel.setText(questionsMap.getQuestion(currentQuestion));
+    }
+
+    @FXML
     private void clearButtonAction() {
         inputTextArea.setText("");
     }
@@ -160,16 +165,12 @@ public class UIController {
     public void openHelpWindow() {
         displayHelp();
         grid.add(helpLabel, 0, 2);
-
         StackPane thirdLayout = new StackPane();
         thirdLayout.getChildren().add(helpLabel);
-
         Scene thirdScene = new Scene(thirdLayout, 550, 350);
-
         Stage thirdStage = new Stage();
         thirdStage.setTitle("Help");
         thirdStage.setScene(thirdScene);
-
         thirdStage.show();
     }
 
@@ -180,29 +181,19 @@ public class UIController {
                 "Use American English (honor vs honour, gray vs grey, etc");
     }
 
-
     private void openResultWindow() {
         displayResult();
         grid.add(resultLabel, 0, 2);
-
         StackPane secondaryLayout = new StackPane();
         secondaryLayout.getChildren().add(resultsGrid);
         resultsGrid.add(resultLabel, 0, 1);
-
-
         Scene secondScene = new Scene(secondaryLayout, 300, 175);
-
         Stage secondStage = new Stage();
         secondStage.setTitle("Your results");
         secondStage.setScene(secondScene);
-
         secondStage.show();
     }
-
     private void displayResult() {
         resultLabel.setText("Your race: " + raceResult + "\nYour class: " + classResult);
     }
-
-
 }
-
