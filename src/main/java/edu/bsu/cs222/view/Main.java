@@ -25,7 +25,7 @@ public class Main extends Application {
 
             Scene scene = new Scene(pane);
 
-            primaryStage.setTitle("Character Designer v0.3.0");
+            primaryStage.setTitle("Character Builder v0.3.0");
 
             primaryStage.setScene(scene);
             primaryStage.show();
