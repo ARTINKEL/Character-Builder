@@ -46,6 +46,7 @@ public class UIController {
     @FXML
     private void initialize() {
         questionLabel.setText(questionsMap.getQuestion(currentQuestion));
+        backButton.setVisible(false);
     }
 
     @FXML
